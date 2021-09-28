@@ -223,3 +223,9 @@ opacity: 100%;
     opacity: 1;
     padding: 10px;   
 }
+
+.validation-errors{
+    .error-message{
+        color:red
+    }
+}
