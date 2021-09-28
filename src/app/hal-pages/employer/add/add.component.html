@@ -14,194 +14,365 @@
         </div>
         <div class="row clearfix">
             <div class="col-12">
-                <div class="card">
-                    <div class="header">
-                        <h2 class="form-sub-header">
-                            New Employer Details
-                        </h2>
-                    </div>
-                    <div class="body">
-                        <div class="row">
-                            <div class="col-sm-6 m-b-5">
-                                <div class="customInput">
-                                    <label>Name of Employer</label>
-                                    <input type="text" placeholder="Name of Employer" />
-                                </div>
-                            </div>
-                            <div class="col-sm-6 m-b-5">
-                                <div class="customInput">
-                                    <label>Registration No. Of Business</label>
-                                    <input type="text" placeholder="Registration No. Of Business" />
-                                </div>
-                            </div>
-                            <div class="col-sm-6 m-b-5">
-                                <div class="customInput">
-                                    <label>Employer ID</label>
-                                    <input type="text" placeholder="Employer ID" />
-                                </div>
-                            </div>
-                            <div class="col-sm-6 m-b-5">
-                                <div class="customInput">
-                                    <label>Registration Certificate</label>
-                                    <input type="text" placeholder="Registration Certificate" />
-                                </div>
-                            </div>
-                            <div class="col-sm-6 m-b-5">
-                                <div class="customInput">
-                                    <label>Maximum Fund Per Employee</label>
-                                    <input type="text" placeholder="Maximum Fund Per Employee" />
-                                </div>
-                            </div>
-                            <div class="col-sm-6 m-b-5">
-                                <div class="customInput">
-                                    <label>Type of Business</label>
-                                    <select class="browser-default">
-                                        <option value="" disabled selected>Type of Business</option>
-                                        <option value="1">Option 1</option>
-                                        <option value="2">Option 2</option>
-                                        <option value="3">Option 3</option>
-                                    </select>
-                                </div>
-                            </div>
-                            <div class="col-sm-6 m-b-5">
-                                <div class="customInput">
-                                    <label>Approved Fund Per Employee</label>
-                                    <input type="text" placeholder="Approved Fund Per Employee" />
-                                </div>
-                            </div>
-                            <div class="col-sm-6 m-b-5">
-                                <div class="customInput">
-                                    <label>No. Of Employees</label>
-                                    <input type="text" placeholder="No. Of Employees" />
-                                </div>
-                            </div>
-                            <div class="col-sm-6 m-b-5">
-                                <div class="customInput">
-                                    <label>No. Of Employee For Finance</label>
-                                    <input type="text" placeholder="No. Of Employee For Finance" />
-                                </div>
-                            </div>
+                <form [formGroup]="addEmployerForm">
+                    <div class="card">
+                        <div class="header">
+                            <h2 class="form-sub-header">
+                                New Employer Details
+                            </h2>
                         </div>
-                        <hr>
-                    </div>
-                    <div class="header">
-                        <h2 class="form-sub-header">
-                            Contact Details
-                        </h2>
-                    </div>
-                    <div class="body">
-                        <div class="row">
-                            <div class="col-sm-6 m-b-5">
-                                <div class="customInput">
-                                    <label>Country</label>
-                                    <select class="browser-default">
-                                        <option value="" disabled selected>Country</option>
-                                        <option value="1">Option 1</option>
-                                        <option value="2">Option 2</option>
-                                        <option value="3">Option 3</option>
-                                    </select>
+                        <div class="body">
+                            <div class="row">
+                                <div class="col-sm-6 m-b-5">
+                                    <div class="customInput">
+                                        <label>Name of Employer</label>
+                                        <input type="text" placeholder="Name of Employer" formControlName="employer_name" />
+                                    </div>
+                                    <div class="validation-errors">
+                                        <ng-container *ngFor="let validation of validation_messages.employer_name">
+                                            <div class="error-message"
+                                                *ngIf="addEmployerForm.get('employer_name').hasError(validation.type) && (addEmployerForm.get('employer_name').dirty || addEmployerForm.get('employer_name').touched) && submitted">
+                                                {{ validation.message }}
+                                            </div>
+                                        </ng-container>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="col-sm-6 m-b-5">
-                                <div class="customInput">
-                                    <label>State</label>
-                                    <select class="browser-default">
-                                        <option value="" disabled selected>State</option>
-                                        <option value="1">Option 1</option>
-                                        <option value="2">Option 2</option>
-                                        <option value="3">Option 3</option>
-                                    </select>
+                                <div class="col-sm-6 m-b-5">
+                                    <div class="customInput">
+                                        <label>Registration No. Of Business</label>
+                                        <input type="text" placeholder="Registration No. Of Business" formControlName="reg_no" />
+                                    </div>
+                                    <div class="validation-errors">
+                                        <ng-container *ngFor="let validation of validation_messages.reg_no">
+                                            <div class="error-message"
+                                                *ngIf="addEmployerForm.get('reg_no').hasError(validation.type) && (addEmployerForm.get('reg_no').dirty || addEmployerForm.get('reg_no').touched) && submitted">
+                                                {{ validation.message }}
+                                            </div>
+                                        </ng-container>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="col-sm-12 m-b-5">
-                                <div class="customInput">
-                                    <label>Address</label>
-                                    <input type="text" placeholder="Address 1" />
-                                    <input type="text" placeholder="Address 2" />
-                                    <input type="text" placeholder="Address 3" />
+                                <div class="col-sm-6 m-b-5">
+                                    <div class="customInput">
+                                        <label>Employer ID</label>
+                                        <input type="text" placeholder="Employer ID"  formControlName="employer_id" />
+                                    </div>
+                                    <div class="validation-errors">
+                                        <ng-container *ngFor="let validation of validation_messages.employer_id">
+                                            <div class="error-message"
+                                                *ngIf="addEmployerForm.get('employer_id').hasError(validation.type) && (addEmployerForm.get('employer_id').dirty || addEmployerForm.get('employer_id').touched) && submitted">
+                                                {{ validation.message }}
+                                            </div>
+                                        </ng-container>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="col-sm-6 m-b-5">
-                                <div class="customInput">
-                                    <label>PIN</label>
-                                    <input type="text" placeholder="PIN" />
+                                <div class="col-sm-6 m-b-5">
+                                    <div class="customInput">
+                                        <label>Registration Certificate</label>
+                                        <input type="text" placeholder="Registration Certificate" formControlName="reg_certificate" />
+                                    </div>
+                                    <div class="validation-errors">
+                                        <ng-container *ngFor="let validation of validation_messages.reg_certificate">
+                                            <div class="error-message"
+                                                *ngIf="addEmployerForm.get('reg_certificate').hasError(validation.type) && (addEmployerForm.get('reg_certificate').dirty || addEmployerForm.get('reg_certificate').touched) && submitted">
+                                                {{ validation.message }}
+                                            </div>
+                                        </ng-container>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="col-sm-6 m-b-5"></div>
-
-                            <div class="col-sm-6 m-b-5">
-                                <p>Coordinates</p>
-                                <div class="customInput">
-                                    <label>Longitude</label>
-                                    <input type="text" placeholder="Longitude" />
+                                <div class="col-sm-6 m-b-5">
+                                    <div class="customInput">
+                                        <label>Maximum Fund Per Employee</label>
+                                        <input type="text" placeholder="Maximum Fund Per Employee"  formControlName="max_fund"/>
+                                    </div>
+                                    <div class="validation-errors">
+                                        <ng-container *ngFor="let validation of validation_messages.max_fund">
+                                            <div class="error-message"
+                                                *ngIf="addEmployerForm.get('max_fund').hasError(validation.type) && (addEmployerForm.get('max_fund').dirty || addEmployerForm.get('max_fund').touched) && submitted">
+                                                {{ validation.message }}
+                                            </div>
+                                        </ng-container>
+                                    </div>
                                 </div>
-                            </div>
-
-                            <div class="col-sm-6 m-b-5">
-                                <p>&nbsp;</p>
-                                <div class="customInput">
-                                    <label>Latitude</label>
-                                    <input type="text" placeholder="Latitude" />
+                                <div class="col-sm-6 m-b-5">
+                                    <div class="customInput">
+                                        <label>Type of Business</label>
+                                        <select class="browser-default" formControlName="business_type">
+                                            <option value="" disabled selected>Type of Business</option>
+                                            <option value="1">Option 1</option>
+                                            <option value="2">Option 2</option>
+                                            <option value="3">Option 3</option>
+                                        </select>
+                                    </div>
+                                    <div class="validation-errors">
+                                        <ng-container *ngFor="let validation of validation_messages.business_type">
+                                            <div class="error-message"
+                                                *ngIf="addEmployerForm.get('business_type').hasError(validation.type) && (addEmployerForm.get('business_type').dirty || addEmployerForm.get('business_type').touched) && submitted">
+                                                {{ validation.message }}
+                                            </div>
+                                        </ng-container>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6 m-b-5">
+                                    <div class="customInput">
+                                        <label>Approved Fund Per Employee</label>
+                                        <input type="text" placeholder="Approved Fund Per Employee" formControlName="approved_fund" />
+                                    </div>
+                                    <div class="validation-errors">
+                                        <ng-container *ngFor="let validation of validation_messages.approved_fund">
+                                            <div class="error-message"
+                                                *ngIf="addEmployerForm.get('approved_fund').hasError(validation.type) && (addEmployerForm.get('approved_fund').dirty || addEmployerForm.get('approved_fund').touched) && submitted">
+                                                {{ validation.message }}
+                                            </div>
+                                        </ng-container>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6 m-b-5">
+                                    <div class="customInput">
+                                        <label>No. Of Employees</label>
+                                        <input type="text" placeholder="No. Of Employees" formControlName="no_of_employees" />
+                                    </div>
+                                    <div class="validation-errors">
+                                        <ng-container *ngFor="let validation of validation_messages.no_of_employees">
+                                            <div class="error-message"
+                                                *ngIf="addEmployerForm.get('no_of_employees').hasError(validation.type) && (addEmployerForm.get('no_of_employees').dirty || addEmployerForm.get('no_of_employees').touched) && submitted">
+                                                {{ validation.message }}
+                                            </div>
+                                        </ng-container>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6 m-b-5">
+                                    <div class="customInput">
+                                        <label>No. Of Employee For Finance</label>
+                                        <input type="text" placeholder="No. Of Employee For Finance" formControlName="no_of_employees_finance" />
+                                    </div>
+                                    <div class="validation-errors">
+                                        <ng-container *ngFor="let validation of validation_messages.no_of_employees_finance">
+                                            <div class="error-message"
+                                                *ngIf="addEmployerForm.get('no_of_employees_finance').hasError(validation.type) && (addEmployerForm.get('no_of_employees_finance').dirty || addEmployerForm.get('no_of_employees_finance').touched) && submitted">
+                                                {{ validation.message }}
+                                            </div>
+                                        </ng-container>
+                                    </div>
                                 </div>
                             </div>
                             <hr>
                         </div>
-                    </div>
-                    <hr>
-                    <div class="header">
-                        <h2 class="form-sub-header">
-                            Other Details
-                        </h2>
-                    </div>
-                    <div class="body">
-                        <div class="row m-b-20">
-                            <div class="col-sm-6 m-b-5">
-                                <div class="customInput">
-                                    <label>Director’s National ID</label>
-                                    <input type="text" placeholder="Director’s National ID" />
-                                </div>
-                            </div>
-                            <div class="col-sm-6 m-b-5">
-                                <div class="customInput">
-                                    <label>Director’s National ID Copy</label>
-                                    <input type="text" placeholder="Director’s National ID Copy" />
-                                </div>
-                            </div>
-
-                            <div class="col-sm-6 m-b-5">
-                                <div class="customInput">
-                                    <label>Contact Person</label>
-                                    <input type="text" placeholder="Contact Person" />
-                                </div>
-                            </div>
-                            <div class="col-sm-6 m-b-5">
-                                <div class="customInput">
-                                    <label>Status</label>
-                                    <select class="browser-default">
-                                        <option value="" disabled selected>Status</option>
-                                        <option value="1">Option 1</option>
-                                        <option value="2">Option 2</option>
-                                        <option value="3">Option 3</option>
-                                    </select>
-                                </div>
-                            </div>
-
+                        <div class="header">
+                            <h2 class="form-sub-header">
+                                Contact Details
+                            </h2>
                         </div>
-                        <div class="row m-b-20 submit-btns">
-                            <div class="col-sm-2">
-                                <div class="cus-btn2 color1">Save</div>
-                            </div>
-                            <div class="col-sm-3">
-                                <div class="cus-btn2 color2">Send for Approval</div>
-                            </div>
-                            <div class="col-sm-3">
-                                <div class="cus-btn2 color3">Cancel</div>
+                        <div class="body">
+                            <div class="row">
+                                <div class="col-sm-6 m-b-5">
+                                    <div class="customInput">
+                                        <label>Country</label>
+                                        <select class="browser-default"  formControlName="country">
+                                            <option value="" disabled selected>Country</option>
+                                            <option value="1">Option 1</option>
+                                            <option value="2">Option 2</option>
+                                            <option value="3">Option 3</option>
+                                        </select>
+                                    </div>
+                                    <div class="validation-errors">
+                                        <ng-container *ngFor="let validation of validation_messages.country">
+                                            <div class="error-message"
+                                                *ngIf="addEmployerForm.get('country').hasError(validation.type) && (addEmployerForm.get('country').dirty || addEmployerForm.get('country').touched) && submitted">
+                                                {{ validation.message }}
+                                            </div>
+                                        </ng-container>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6 m-b-5">
+                                    <div class="customInput">
+                                        <label>State</label>
+                                        <select class="browser-default" formControlName="state">
+                                            <option value="" disabled selected>State</option>
+                                            <option value="1">Option 1</option>
+                                            <option value="2">Option 2</option>
+                                            <option value="3">Option 3</option>
+                                        </select>
+                                    </div>
+                                    <div class="validation-errors">
+                                        <ng-container *ngFor="let validation of validation_messages.state">
+                                            <div class="error-message"
+                                                *ngIf="addEmployerForm.get('state').hasError(validation.type) && (addEmployerForm.get('state').dirty || addEmployerForm.get('state').touched) && submitted">
+                                                {{ validation.message }}
+                                            </div>
+                                        </ng-container>
+                                    </div>
+                                </div>
+                                <div class="col-sm-12 m-b-5">
+                                    <div class="customInput">
+                                        <label>Address</label>
+                                        <input type="text" placeholder="Address 1" formControlName="address1"/>
+                                        <input type="text" placeholder="Address 2" formControlName="address2"/>
+                                        <input type="text" placeholder="Address 3" formControlName="address3"/>
+                                    </div>
+                                    <div class="validation-errors">
+                                        <ng-container *ngFor="let validation of validation_messages.address1">
+                                            <div class="error-message"
+                                                *ngIf="addEmployerForm.get('address1').hasError(validation.type) && (addEmployerForm.get('address1').dirty || addEmployerForm.get('address1').touched) && submitted">
+                                                {{ validation.message }}
+                                            </div>
+                                        </ng-container>
+                                    </div>
+                                    <div class="validation-errors">
+                                        <ng-container *ngFor="let validation of validation_messages.address2">
+                                            <div class="error-message"
+                                                *ngIf="addEmployerForm.get('address2').hasError(validation.type) && (addEmployerForm.get('address2').dirty || addEmployerForm.get('address2').touched) && submitted">
+                                                {{ validation.message }}
+                                            </div>
+                                        </ng-container>
+                                    </div>
+                                    <div class="validation-errors">
+                                        <ng-container *ngFor="let validation of validation_messages.address3">
+                                            <div class="error-message"
+                                                *ngIf="addEmployerForm.get('address3').hasError(validation.type) && (addEmployerForm.get('address3').dirty || addEmployerForm.get('address3').touched) && submitted">
+                                                {{ validation.message }}
+                                            </div>
+                                        </ng-container>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6 m-b-5">
+                                    <div class="customInput">
+                                        <label>PIN</label>
+                                        <input type="text" placeholder="PIN" formControlName="pincode"/>
+                                    </div>
+                                    <div class="validation-errors">
+                                        <ng-container *ngFor="let validation of validation_messages.pincode">
+                                            <div class="error-message"
+                                                *ngIf="addEmployerForm.get('pincode').hasError(validation.type) && (addEmployerForm.get('pincode').dirty || addEmployerForm.get('pincode').touched) && submitted">
+                                                {{ validation.message }}
+                                            </div>
+                                        </ng-container>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6 m-b-5"></div>
+    
+                                <div class="col-sm-6 m-b-5">
+                                    <p>Coordinates</p>
+                                    <div class="customInput">
+                                        <label>Longitude</label>
+                                        <input type="text" placeholder="Longitude" formControlName="longitude" />
+                                    </div>
+                                    <div class="validation-errors">
+                                        <ng-container *ngFor="let validation of validation_messages.longitude">
+                                            <div class="error-message"
+                                                *ngIf="addEmployerForm.get('longitude').hasError(validation.type) && (addEmployerForm.get('longitude').dirty || addEmployerForm.get('longitude').touched) && submitted">
+                                                {{ validation.message }}
+                                            </div>
+                                        </ng-container>
+                                    </div>
+                                </div>
+    
+                                <div class="col-sm-6 m-b-5">
+                                    <p>&nbsp;</p>
+                                    <div class="customInput">
+                                        <label>Latitude</label>
+                                        <input type="text" placeholder="Latitude" formControlName="latitude" />
+                                    </div>
+                                    <div class="validation-errors">
+                                        <ng-container *ngFor="let validation of validation_messages.latitude">
+                                            <div class="error-message"
+                                                *ngIf="addEmployerForm.get('latitude').hasError(validation.type) && (addEmployerForm.get('latitude').dirty || addEmployerForm.get('latitude').touched) && submitted">
+                                                {{ validation.message }}
+                                            </div>
+                                        </ng-container>
+                                    </div>
+                                </div>
+                                <hr>
                             </div>
                         </div>
-
+                        <hr>
+                        <div class="header">
+                            <h2 class="form-sub-header">
+                                Other Details
+                            </h2>
+                        </div>
+                        <div class="body">
+                            <div class="row m-b-20">
+                                <div class="col-sm-6 m-b-5">
+                                    <div class="customInput">
+                                        <label>Director’s National ID</label>
+                                        <input type="text" placeholder="Director’s National ID" formControlName="dir_national_id" />
+                                    </div>
+                                    <div class="validation-errors">
+                                        <ng-container *ngFor="let validation of validation_messages.dir_national_id">
+                                            <div class="error-message"
+                                                *ngIf="addEmployerForm.get('dir_national_id').hasError(validation.type) && (addEmployerForm.get('dir_national_id').dirty || addEmployerForm.get('dir_national_id').touched) && submitted">
+                                                {{ validation.message }}
+                                            </div>
+                                        </ng-container>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6 m-b-5">
+                                    <div class="customInput">
+                                        <label>Director’s National ID Copy</label>
+                                        <input type="text" placeholder="Director’s National ID Copy" formControlName="dir_natonal_id_copy" />
+                                    </div>
+                                    <div class="validation-errors">
+                                        <ng-container *ngFor="let validation of validation_messages.dir_natonal_id_copy">
+                                            <div class="error-message"
+                                                *ngIf="addEmployerForm.get('dir_natonal_id_copy').hasError(validation.type) && (addEmployerForm.get('dir_natonal_id_copy').dirty || addEmployerForm.get('dir_natonal_id_copy').touched) && submitted">
+                                                {{ validation.message }}
+                                            </div>
+                                        </ng-container>
+                                    </div>
+                                </div>
+    
+                                <div class="col-sm-6 m-b-5">
+                                    <div class="customInput">
+                                        <label>Contact Person</label>
+                                        <input type="text" placeholder="Contact Person" formControlName="contact_person" />
+                                    </div>
+                                    <div class="validation-errors">
+                                        <ng-container *ngFor="let validation of validation_messages.contact_person">
+                                            <div class="error-message"
+                                                *ngIf="addEmployerForm.get('contact_person').hasError(validation.type) && (addEmployerForm.get('contact_person').dirty || addEmployerForm.get('contact_person').touched) && submitted">
+                                                {{ validation.message }}
+                                            </div>
+                                        </ng-container>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6 m-b-5">
+                                    <div class="customInput">
+                                        <label>Status</label>
+                                        <select class="browser-default" formControlName="status">
+                                            <option value="" disabled selected>Status</option>
+                                            <option value="1">Option 1</option>
+                                            <option value="2">Option 2</option>
+                                            <option value="3">Option 3</option>
+                                        </select>
+                                    </div>
+                                    <div class="validation-errors">
+                                        <ng-container *ngFor="let validation of validation_messages.status">
+                                            <div class="error-message"
+                                                *ngIf="addEmployerForm.get('status').hasError(validation.type) && (addEmployerForm.get('status').dirty || addEmployerForm.get('status').touched) && submitted">
+                                                {{ validation.message }}
+                                            </div>
+                                        </ng-container>
+                                    </div>
+                                </div>
+    
+                            </div>
+                            <div class="row m-b-20 submit-btns">
+                                <div class="col-sm-2">
+                                    <div class="cus-btn2 color1" (click)="addEmployer()">Save</div>
+                                </div>
+                                <div class="col-sm-3">
+                                    <div class="cus-btn2 color2">Send for Approval</div>
+                                </div>
+                                <div class="col-sm-3">
+                                    <div class="cus-btn2 color3">Cancel</div>
+                                </div>
+                            </div>
+    
+                        </div>
+    
                     </div>
-
-                </div>
+                </form>
+              
             </div>
         </div>
     </div>
