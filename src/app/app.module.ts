@@ -18,7 +18,7 @@ import { DynamicScriptLoaderService } from "./services/dynamic-script-loader.ser
     HeaderComponent,
     PageLoaderComponent,
     SidebarComponent,
-    RightSidebarComponent
+    RightSidebarComponent,
   ],
   imports: [
     BrowserModule,

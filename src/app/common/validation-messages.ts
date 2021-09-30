@@ -34,6 +34,10 @@ export const ValidationMessages = {
     dir_national_id: [ { type: 'required', message: 'Director’s National ID is required' }],
     dir_natonal_id_copy: [ { type: 'required', message: 'Director’s National ID Copy is required' }],
     contact_person: [ { type: 'required', message: 'Contact Person is required' }],
-    status: [ { type: 'required', message: 'Status is required' }]
+    status: [ { type: 'required', message: 'Status is required' }],
+    email: [ { type: 'required', message: 'Email is required' }],
+    password: [ { type: 'required', message: 'Password is required' }]
+
+
 
 };

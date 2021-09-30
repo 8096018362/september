@@ -358,13 +358,82 @@
                             </div>
                             <div class="row m-b-20 submit-btns">
                                 <div class="col-sm-2">
-                                    <div class="cus-btn2 color1" (click)="addEmployer()">Save</div>
+                                    <div class="cus-btn2 color1" data-toggle="modal"
+                                    data-target="#basicModal" (click)="addEmployer()">Save</div>
+                                    <div class="modal fade" id="basicModal" tabindex="-1" role="dialog"
+                                    aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                    <div class="modal-dialog" role="document">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h5 class="modal-title" id="exampleModalLabel">Save Now!</h5>
+                                                <button type="button" class="close" data-dismiss="modal"
+                                                    aria-label="Close">
+                                                    <span aria-hidden="true">&times;</span>
+                                                </button>
+                                            </div>
+                                            <div class="modal-body">
+                                              Are you sure you want to save this data?
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-info waves-effect">Save</button>
+                                                <button type="button" class="btn btn-danger waves-effect"
+                                                    data-dismiss="modal">Cancel</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                                 </div>
                                 <div class="col-sm-3">
-                                    <div class="cus-btn2 color2">Send for Approval</div>
+                                    <div class="cus-btn2 color2" data-toggle="modal"
+                                    data-target="#sendApproval" >Send for Approval</div>
+                                    <div class="modal fade" id="sendApproval" tabindex="-1" role="dialog"
+                                    aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                    <div class="modal-dialog" role="document">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h5 class="modal-title" id="exampleModalLabel">Send for Approve!</h5>
+                                                <button type="button" class="close" data-dismiss="modal"
+                                                    aria-label="Close">
+                                                    <span aria-hidden="true">&times;</span>
+                                                </button>
+                                            </div>
+                                            <div class="modal-body">
+                                              Are you sure you want to send this for Approval?
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-info waves-effect">Send</button>
+                                                <button type="button" class="btn btn-danger waves-effect"
+                                                    data-dismiss="modal">Cancel</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                                 </div>
                                 <div class="col-sm-3">
-                                    <div class="cus-btn2 color3">Cancel</div>
+                                    <div class="cus-btn2 color3"  data-toggle="modal"
+                                    data-target="#cancelModal">Cancel</div>
+                                    <div class="modal fade" id="cancelModal" tabindex="-1" role="dialog"
+                                    aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                    <div class="modal-dialog" role="document">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h5 class="modal-title" id="exampleModalLabel">Cancel Now!</h5>
+                                                <button type="button" class="close" data-dismiss="modal"
+                                                    aria-label="Close">
+                                                    <span aria-hidden="true">&times;</span>
+                                                </button>
+                                            </div>
+                                            <div class="modal-body">
+                                              Are you sure you want to cancel this?
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-info waves-effect">Yes</button>
+                                                <button type="button" class="btn btn-danger waves-effect"
+                                                    data-dismiss="modal">No</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                                 </div>
                             </div>
     

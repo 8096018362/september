@@ -62,10 +62,10 @@ const routes: Routes = [
     //     path: 'widget',
     //     loadChildren: () => import('./widget/widget.module').then(m => m.WidgetModule)
     // },
-    // {
-    //     path: 'ui',
-    //     loadChildren: () => import('./ui/ui.module').then(m => m.UiModule)
-    // },
+    {
+        path: 'ui',
+        loadChildren: () => import('./ui/ui.module').then(m => m.UiModule)
+    },
     // {
     //     path: 'forms',
     //     loadChildren: () => import('./forms/forms.module').then(m => m.FormModule)
@@ -90,10 +90,10 @@ const routes: Routes = [
     //     path: 'icons',
     //     loadChildren: () => import('./icons/icons.module').then(m => m.IconsModule)
     // },
-    // {
-    //     path: 'authentication',
-    //     loadChildren: () => import('./authentication/authentication.module').then(m => m.AuthenticationModule)
-    // },
+    {
+        path: 'authentication',
+        loadChildren: () => import('./authentication/authentication.module').then(m => m.AuthenticationModule)
+    },
     // {
     //     path: 'extra-pages',
     //     loadChildren: () => import('./extra-pages/extra-pages.module').then(m => m.ExtraPagesModule)
