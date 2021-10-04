@@ -10,3 +10,39 @@
 //     //bottom: 0;
 //     left: 40vw;
 // }
+
+.savebtn{
+    background: #295B84 !important ;
+    border: 1px solid #295B84 !important;
+
+}
+
+.cancelbtn{
+    background: #fff !important;
+    color: red !important;
+    border: 1px solid red !important;
+}
+
+.modal-content{
+    border-radius: 25px;
+    width: 60%;
+    margin: auto;
+    .modal-body{
+        text-align: center;
+        p{
+            font-size:18px;color: #1C1E1F;
+        }
+    }
+    img{
+        width: 25%;margin: auto;margin-top: -30px;
+    }
+    .headerText{
+        margin-top: 25px;text-align: center;
+        .titleDiv{
+            color: #082339;font-size: 20px;font-weight: 600;
+        }
+        span{
+            border-bottom:2px dashed #6E6E6E;
+        }
+    }
+}
