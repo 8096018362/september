@@ -26,7 +26,8 @@
                                 <div class="col-sm-6 m-b-5">
                                     <div class="customInput">
                                         <label>Name of Employer</label>
-                                        <input type="text" placeholder="Name of Employer" formControlName="employer_name" />
+                                        <input type="text" placeholder="Name of Employer"
+                                            formControlName="employer_name" />
                                     </div>
                                     <div class="validation-errors">
                                         <ng-container *ngFor="let validation of validation_messages.employer_name">
@@ -40,7 +41,8 @@
                                 <div class="col-sm-6 m-b-5">
                                     <div class="customInput">
                                         <label>Registration No. Of Business</label>
-                                        <input type="text" placeholder="Registration No. Of Business" formControlName="reg_no" />
+                                        <input type="text" placeholder="Registration No. Of Business"
+                                            formControlName="reg_no" />
                                     </div>
                                     <div class="validation-errors">
                                         <ng-container *ngFor="let validation of validation_messages.reg_no">
@@ -54,7 +56,7 @@
                                 <div class="col-sm-6 m-b-5">
                                     <div class="customInput">
                                         <label>Employer ID</label>
-                                        <input type="text" placeholder="Employer ID"  formControlName="employer_id" />
+                                        <input type="text" placeholder="Employer ID" formControlName="employer_id" />
                                     </div>
                                     <div class="validation-errors">
                                         <ng-container *ngFor="let validation of validation_messages.employer_id">
@@ -68,7 +70,8 @@
                                 <div class="col-sm-6 m-b-5">
                                     <div class="customInput">
                                         <label>Registration Certificate</label>
-                                        <input type="text" placeholder="Registration Certificate" formControlName="reg_certificate" />
+                                        <input type="text" placeholder="Registration Certificate"
+                                            formControlName="reg_certificate" />
                                     </div>
                                     <div class="validation-errors">
                                         <ng-container *ngFor="let validation of validation_messages.reg_certificate">
@@ -82,7 +85,8 @@
                                 <div class="col-sm-6 m-b-5">
                                     <div class="customInput">
                                         <label>Maximum Fund Per Employee</label>
-                                        <input type="text" placeholder="Maximum Fund Per Employee"  formControlName="max_fund"/>
+                                        <input type="text" placeholder="Maximum Fund Per Employee"
+                                            formControlName="max_fund" />
                                     </div>
                                     <div class="validation-errors">
                                         <ng-container *ngFor="let validation of validation_messages.max_fund">
@@ -115,7 +119,8 @@
                                 <div class="col-sm-6 m-b-5">
                                     <div class="customInput">
                                         <label>Approved Fund Per Employee</label>
-                                        <input type="text" placeholder="Approved Fund Per Employee" formControlName="approved_fund" />
+                                        <input type="text" placeholder="Approved Fund Per Employee"
+                                            formControlName="approved_fund" />
                                     </div>
                                     <div class="validation-errors">
                                         <ng-container *ngFor="let validation of validation_messages.approved_fund">
@@ -129,7 +134,8 @@
                                 <div class="col-sm-6 m-b-5">
                                     <div class="customInput">
                                         <label>No. Of Employees</label>
-                                        <input type="text" placeholder="No. Of Employees" formControlName="no_of_employees" />
+                                        <input type="text" placeholder="No. Of Employees"
+                                            formControlName="no_of_employees" />
                                     </div>
                                     <div class="validation-errors">
                                         <ng-container *ngFor="let validation of validation_messages.no_of_employees">
@@ -143,10 +149,12 @@
                                 <div class="col-sm-6 m-b-5">
                                     <div class="customInput">
                                         <label>No. Of Employee For Finance</label>
-                                        <input type="text" placeholder="No. Of Employee For Finance" formControlName="no_of_employees_finance" />
+                                        <input type="text" placeholder="No. Of Employee For Finance"
+                                            formControlName="no_of_employees_finance" />
                                     </div>
                                     <div class="validation-errors">
-                                        <ng-container *ngFor="let validation of validation_messages.no_of_employees_finance">
+                                        <ng-container
+                                            *ngFor="let validation of validation_messages.no_of_employees_finance">
                                             <div class="error-message"
                                                 *ngIf="addEmployerForm.get('no_of_employees_finance').hasError(validation.type) && (addEmployerForm.get('no_of_employees_finance').dirty || addEmployerForm.get('no_of_employees_finance').touched) && submitted">
                                                 {{ validation.message }}
@@ -167,7 +175,7 @@
                                 <div class="col-sm-6 m-b-5">
                                     <div class="customInput">
                                         <label>Country</label>
-                                        <select class="browser-default"  formControlName="country">
+                                        <select class="browser-default" formControlName="country">
                                             <option value="" disabled selected>Country</option>
                                             <option value="1">Option 1</option>
                                             <option value="2">Option 2</option>
@@ -205,9 +213,9 @@
                                 <div class="col-sm-12 m-b-5">
                                     <div class="customInput">
                                         <label>Address</label>
-                                        <input type="text" placeholder="Address 1" formControlName="address1"/>
-                                        <input type="text" placeholder="Address 2" formControlName="address2"/>
-                                        <input type="text" placeholder="Address 3" formControlName="address3"/>
+                                        <input type="text" placeholder="Address 1" formControlName="address1" />
+                                        <input type="text" placeholder="Address 2" formControlName="address2" />
+                                        <input type="text" placeholder="Address 3" formControlName="address3" />
                                     </div>
                                     <div class="validation-errors">
                                         <ng-container *ngFor="let validation of validation_messages.address1">
@@ -237,7 +245,7 @@
                                 <div class="col-sm-6 m-b-5">
                                     <div class="customInput">
                                         <label>PIN</label>
-                                        <input type="text" placeholder="PIN" formControlName="pincode"/>
+                                        <input type="text" placeholder="PIN" formControlName="pincode" />
                                     </div>
                                     <div class="validation-errors">
                                         <ng-container *ngFor="let validation of validation_messages.pincode">
@@ -249,7 +257,7 @@
                                     </div>
                                 </div>
                                 <div class="col-sm-6 m-b-5"></div>
-    
+
                                 <div class="col-sm-6 m-b-5">
                                     <p>Coordinates</p>
                                     <div class="customInput">
@@ -265,7 +273,7 @@
                                         </ng-container>
                                     </div>
                                 </div>
-    
+
                                 <div class="col-sm-6 m-b-5">
                                     <p>&nbsp;</p>
                                     <div class="customInput">
@@ -295,7 +303,8 @@
                                 <div class="col-sm-6 m-b-5">
                                     <div class="customInput">
                                         <label>Director’s National ID</label>
-                                        <input type="text" placeholder="Director’s National ID" formControlName="dir_national_id" />
+                                        <input type="text" placeholder="Director’s National ID"
+                                            formControlName="dir_national_id" />
                                     </div>
                                     <div class="validation-errors">
                                         <ng-container *ngFor="let validation of validation_messages.dir_national_id">
@@ -309,10 +318,12 @@
                                 <div class="col-sm-6 m-b-5">
                                     <div class="customInput">
                                         <label>Director’s National ID Copy</label>
-                                        <input type="text" placeholder="Director’s National ID Copy" formControlName="dir_natonal_id_copy" />
+                                        <input type="text" placeholder="Director’s National ID Copy"
+                                            formControlName="dir_natonal_id_copy" />
                                     </div>
                                     <div class="validation-errors">
-                                        <ng-container *ngFor="let validation of validation_messages.dir_natonal_id_copy">
+                                        <ng-container
+                                            *ngFor="let validation of validation_messages.dir_natonal_id_copy">
                                             <div class="error-message"
                                                 *ngIf="addEmployerForm.get('dir_natonal_id_copy').hasError(validation.type) && (addEmployerForm.get('dir_natonal_id_copy').dirty || addEmployerForm.get('dir_natonal_id_copy').touched) && submitted">
                                                 {{ validation.message }}
@@ -320,11 +331,12 @@
                                         </ng-container>
                                     </div>
                                 </div>
-    
+
                                 <div class="col-sm-6 m-b-5">
                                     <div class="customInput">
                                         <label>Contact Person</label>
-                                        <input type="text" placeholder="Contact Person" formControlName="contact_person" />
+                                        <input type="text" placeholder="Contact Person"
+                                            formControlName="contact_person" />
                                     </div>
                                     <div class="validation-errors">
                                         <ng-container *ngFor="let validation of validation_messages.contact_person">
@@ -354,94 +366,104 @@
                                         </ng-container>
                                     </div>
                                 </div>
-    
+
                             </div>
                             <div class="row m-b-20 submit-btns">
                                 <div class="col-sm-2">
-                                    <div class="cus-btn2 color1" data-toggle="modal"
-                                    data-target="#basicModal" (click)="addEmployer()">Save</div>
+                                    <div class="cus-btn2 color1" data-toggle="modal" data-target="#basicModal"
+                                        (click)="addEmployer()">Save</div>
                                     <div class="modal fade" id="basicModal" tabindex="-1" role="dialog"
-                                    aria-labelledby="exampleModalLabel" aria-hidden="true">
-                                    <div class="modal-dialog" role="document">
-                                        <div class="modal-content">
-                                            <div class="modal-header">
-                                                <h5 class="modal-title" id="exampleModalLabel">Save Now!</h5>
-                                                <button type="button" class="close" data-dismiss="modal"
-                                                    aria-label="Close">
-                                                    <span aria-hidden="true">&times;</span>
-                                                </button>
-                                            </div>
-                                            <div class="modal-body">
-                                              Are you sure you want to save this data?
-                                            </div>
-                                            <div class="modal-footer">
-                                                <button type="button" class="btn btn-info waves-effect">Save</button>
-                                                <button type="button" class="btn btn-danger waves-effect"
-                                                    data-dismiss="modal">Cancel</button>
+                                        aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                        <div class="modal-dialog" role="document">
+                                            <div class="modal-content"
+                                                style="border-radius: 25px; width: 60%;margin: auto;">
+                                                <img src="assets/images/popup/save-now.svg"
+                                                    style="width: 25%;margin: auto;margin-top: -30px;" />
+                                                <div style="margin-top: 25px;text-align: center;">
+                                                    <div style="color: #082339;font-size: 20px;font-weight: 600;">Save
+                                                        Now !</div>
+                                                    <div>
+                                                        <span style="border-bottom:2px dashed #6E6E6E;"> &nbsp; &nbsp;
+                                                            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                                                            &nbsp; &nbsp; &nbsp; &nbsp;
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                                <div class="modal-body" style="text-align: center;">
+                                                    <p style="font-size:18px;color: #1C1E1F;"> Are you sure you want to
+                                                        save this data?</p>
+                                                </div>
+                                                <div class="modal-footer" style="text-align:center">
+                                                    <button type="button"
+                                                        class="btn btn-info waves-effect">Save</button>
+                                                    <button type="button" class="btn btn-danger waves-effect"
+                                                        data-dismiss="modal">Cancel</button>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
-                                </div>
                                 <div class="col-sm-3">
-                                    <div class="cus-btn2 color2" data-toggle="modal"
-                                    data-target="#sendApproval" >Send for Approval</div>
+                                    <div class="cus-btn2 color2" data-toggle="modal" data-target="#sendApproval">Send
+                                        for Approval</div>
                                     <div class="modal fade" id="sendApproval" tabindex="-1" role="dialog"
-                                    aria-labelledby="exampleModalLabel" aria-hidden="true">
-                                    <div class="modal-dialog" role="document">
-                                        <div class="modal-content">
-                                            <div class="modal-header">
-                                                <h5 class="modal-title" id="exampleModalLabel">Send for Approve!</h5>
-                                                <button type="button" class="close" data-dismiss="modal"
-                                                    aria-label="Close">
-                                                    <span aria-hidden="true">&times;</span>
-                                                </button>
-                                            </div>
-                                            <div class="modal-body">
-                                              Are you sure you want to send this for Approval?
-                                            </div>
-                                            <div class="modal-footer">
-                                                <button type="button" class="btn btn-info waves-effect">Send</button>
-                                                <button type="button" class="btn btn-danger waves-effect"
-                                                    data-dismiss="modal">Cancel</button>
+                                        aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                        <div class="modal-dialog" role="document">
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+                                                    <h5 class="modal-title" id="exampleModalLabel">Send for Approve!
+                                                    </h5>
+                                                    <button type="button" class="close" data-dismiss="modal"
+                                                        aria-label="Close">
+                                                        <span aria-hidden="true">&times;</span>
+                                                    </button>
+                                                </div>
+                                                <div class="modal-body">
+                                                    Are you sure you want to send this for Approval?
+                                                </div>
+                                                <div class="modal-footer">
+                                                    <button type="button"
+                                                        class="btn btn-info waves-effect">Send</button>
+                                                    <button type="button" class="btn btn-danger waves-effect"
+                                                        data-dismiss="modal">Cancel</button>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
-                                </div>
                                 </div>
                                 <div class="col-sm-3">
-                                    <div class="cus-btn2 color3"  data-toggle="modal"
-                                    data-target="#cancelModal">Cancel</div>
+                                    <div class="cus-btn2 color3" data-toggle="modal" data-target="#cancelModal">Cancel
+                                    </div>
                                     <div class="modal fade" id="cancelModal" tabindex="-1" role="dialog"
-                                    aria-labelledby="exampleModalLabel" aria-hidden="true">
-                                    <div class="modal-dialog" role="document">
-                                        <div class="modal-content">
-                                            <div class="modal-header">
-                                                <h5 class="modal-title" id="exampleModalLabel">Cancel Now!</h5>
-                                                <button type="button" class="close" data-dismiss="modal"
-                                                    aria-label="Close">
-                                                    <span aria-hidden="true">&times;</span>
-                                                </button>
-                                            </div>
-                                            <div class="modal-body">
-                                              Are you sure you want to cancel this?
-                                            </div>
-                                            <div class="modal-footer">
-                                                <button type="button" class="btn btn-info waves-effect">Yes</button>
-                                                <button type="button" class="btn btn-danger waves-effect"
-                                                    data-dismiss="modal">No</button>
+                                        aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                        <div class="modal-dialog" role="document">
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+                                                    <h5 class="modal-title" id="exampleModalLabel">Cancel Now!</h5>
+                                                    <button type="button" class="close" data-dismiss="modal"
+                                                        aria-label="Close">
+                                                        <span aria-hidden="true">&times;</span>
+                                                    </button>
+                                                </div>
+                                                <div class="modal-body">
+                                                    Are you sure you want to cancel this?
+                                                </div>
+                                                <div class="modal-footer">
+                                                    <button type="button" class="btn btn-info waves-effect">Yes</button>
+                                                    <button type="button" class="btn btn-danger waves-effect"
+                                                        data-dismiss="modal">No</button>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
-                                </div>
                                 </div>
                             </div>
-    
+
                         </div>
-    
+
                     </div>
                 </form>
-              
+
             </div>
         </div>
     </div>
