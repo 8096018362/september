@@ -56,7 +56,7 @@ export class AdminComponent {
                 data: [44, 55, 57, 56, 61, 58, 63, 60, 66]
             }],
             xaxis: {
-                categories: ['Tupendane', 'Huruma', '5G Capital', 'ABC Expat', 'Angama Mara', 'Arifu', 'Aspira Kenya', 'Bliss Resort', 'Bomi E&C'],
+                categories: ['Tup', 'Hur', '5G Cap', 'ABC', 'Ang', 'Ari', 'Asp', 'Bles', 'Bomi'],
                 labels: {
                     style: {
                         colors: '#52504F',
