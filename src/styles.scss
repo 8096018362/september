@@ -237,3 +237,39 @@ opacity: 100%;
 .table-striped tbody tr:nth-of-type(odd) {
     background-color: white;
 }
+
+
+.containerdiv{
+    background: #EFF5F7;
+    padding: 2vw;
+    h4{
+        color:#2B86D0;
+        font-size: 16px;
+        margin: 0;
+    }
+    .rowdiv{
+        width: 100%;
+        display: flex;
+        margin-top:1vw;
+        .carddiv{
+            width: 20%;
+            float: left;
+            h5{
+                color:#2C2727;
+                font-size: 11px;
+            }
+            p{
+                color:#646262;
+                font-size:11px;
+            }
+            .finstatus_approv{
+                background: #6CC668;
+                padding: .2vw 1vw;
+                border-radius: 5vw;
+                color: #fff;
+                width: max-content;
+                font-size: 11px;
+            }
+        }
+    }
+ }
