@@ -75,7 +75,9 @@ margin-top: 10px !important;
     font-weight: normal;
 }
 .page-title{
-    color: #181A1C !important;
+    color: #082339 !important;
+    font-size: 20px;
+    font-weight: bolder;
 }
 .nav-item .nav-link{
     font-size: 16px !important;
@@ -228,4 +230,10 @@ opacity: 100%;
     .error-message{
         color:red
     }
+}
+.table{
+    color:#585555!important
+}
+.table-striped tbody tr:nth-of-type(odd) {
+    background-color: white;
 }

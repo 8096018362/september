@@ -70,10 +70,10 @@ const routes: Routes = [
     //     path: 'forms',
     //     loadChildren: () => import('./forms/forms.module').then(m => m.FormModule)
     // },
-    // {
-    //     path: 'tables',
-    //     loadChildren: () => import('./tables/tables.module').then(m => m.TablesModule)
-    // },
+    {
+        path: 'tables',
+        loadChildren: () => import('./tables/tables.module').then(m => m.TablesModule)
+    },
     // {
     //     path: 'media',
     //     loadChildren: () => import('./media/media.module').then(m => m.MediaModule)
