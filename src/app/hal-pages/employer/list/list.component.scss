@@ -1,7 +1,8 @@
 .card-label{
     color: #2C2727 !important;
     opacity: 100%;
-    font-size: 16px;
+    font-size: 14px;
+    font-weight: 600;
 }
 .card-value{
     color:#646262 !important;
@@ -13,4 +14,29 @@
     span{
         padding: 10px;
     }
+}
+
+.mt-5{
+    margin-top: 2vw !important;
+}
+
+.actionbtn{
+    background: #0a68ff;
+    border-radius: 43px;
+    padding: 8px;
+    width:max-content;
+    float: right;
+    img{
+        width: 20px;
+        vertical-align: inherit !important;
+    }
+}
+
+.editbtn{
+    float: right;
+    padding: 5px 5px 0px 5px;
+    color:  #0A68FF;
+    font-size: 12px;
+    cursor: pointer;
+    width: max-content;
 }

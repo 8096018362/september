@@ -21,11 +21,11 @@
                 <div class="card dash-card" *ngFor="let a of [1,1,1,1,1,1,1,1]">
                     <div class="body">
                         <div class="row">
-                            <!-- <div class="col-sm-12 col-12 m-b-0 ">
-                                <div style="text-align: right;padding: 5px 5px 0px 5px;color:  #0A68FF;">
+                            <div class="col-sm-12 col-12 m-b-0 ">
+                                <div class="editbtn" >
                                     <img src="./assets/images/edit.svg" /> Edit
                                 </div>
-                            </div> -->
+                            </div>
                             <div class="col-sm-12 col-12 m-b-0">
                                 <div class="row">
                                     <div class="col-sm-3 col-xs-6 col-6 m-b-0 m-t-5">
@@ -50,19 +50,19 @@
                                             <div class="cus-btn purple">Created</div>
                                         </div>
                                     </div>
-                                    <div class="col-sm-3 col-xs-6 col-6 m-b-0 m-t-5">
+                                    <div class="col-sm-3 col-xs-6 col-6 m-b-0 m-t-5 mt-5">
                                         <div class="card-label">Total No. Of Employees</div>
                                         <div class="card-value">2</div>
                                     </div>
-                                    <div class="col-sm-3 col-xs-6 col-6 m-b-0 m-t-5">
+                                    <div class="col-sm-3 col-xs-6 col-6 m-b-0 m-t-5 mt-5">
                                         <div class="card-label">Allocated Fund</div>
                                         <div class="card-value">KES 300,000</div>
                                     </div>
-                                    <div class="col-sm-2 col-xs-6 col-6 m-b-0 m-t-5">
+                                    <div class="col-sm-2 col-xs-6 col-6 m-b-0 m-t-5 mt-5">
                                         <div class="card-label">Used Fund</div>
                                         <div class="card-value">KES 100,000</div>
                                     </div>
-                                    <div class="col-sm-3 col-xs-6 col-6 m-b-0 m-t-5">
+                                    <div class="col-sm-3 col-xs-6 col-6 m-b-0 m-t-5 mt-5">
                                         <div class="card-label">Address</div>
                                         <div class="card-value">Tupendane DTB Centre, 6th Floor, Mombasa Road P. O. Box
                                             61711-00200 Nairobi, KENYA
@@ -73,11 +73,87 @@
                             </div>
 
                             <div class="col-sm-12 col-12 m-b-0 list-bottom-btns">
-                                <span>Edit</span>
-                                <span>View More</span>
+                                <!-- <span>Edit</span> -->
+                                <div class="actionbtn" *ngIf="!showDetailsFlag" (click)="showdetails( 'show' )">
+                                    <img src="../../../../assets/images/chevrondown.svg">
+                                </div>
+                                <div class="actionbtn" *ngIf="showDetailsFlag" (click)="showdetails( 'hide' )">
+                                    <img src="../../../../assets/images/chevron.svg">
+                                </div>
                             </div>
+
+                           
+
                         </div>
                     </div>
+
+                    <div class="row">
+                        <div class="col-md-12" *ngIf="showDetailsFlag">
+                            <div class="containerdiv"> 
+                                 <div class="row"> 
+                                <div class="col-md-12"> 
+                                <h4>Employee Details</h4> 
+                                  </div> 
+                                  </div> 
+                                 <div class="rowdiv"> 
+                                 <div class="carddiv"> 
+                                 <h5>Employee ID</h5> 
+                                 <p> KSU1KT032725 </p> 
+                                 </div> 
+                                 <div class="carddiv"> 
+                                 <h5>Registration No. Of Business</h5> 
+                                 <p> MAE-U1KT032725 </p> 
+                                 </div> 
+                                 <div class="carddiv"> 
+                                 <h5>Registration Certificate</h5> 
+                                 <p>  ZBBF980067YUI5.pdf  </p> 
+                                 </div> 
+                                 <div class="carddiv"> 
+                                 <h5>Operating Since</h5> 
+                                 <p>  20-9-2021  </p> 
+                                 </div> 
+                                 <div class="carddiv"> 
+                                 <h5>Total Fund Allocated</h5> 
+                                 <p>800,000</p> 
+                                 </div> 
+                                 </div> 
+                                 <div class="rowdiv"> 
+                                 <div class="carddiv"> 
+                                 <h5>Type Of Business</h5> 
+                                 <p>Corporation</p> 
+                                 </div> 
+                                 <div class="carddiv"> 
+                                 <h5>No. Of Employees For Finance</h5> 
+                                 <p>20</p> 
+                                 </div> 
+                                 <div class="carddiv"> 
+                                 <h5>Director’s National ID </h5> 
+                                 <p>KST768832</p> 
+                                 </div> 
+                                 <div class="carddiv"> 
+                                 <h5>Director’s National ID Copy</h5> 
+                                 <p>  d.approveAmount   </p> 
+                                 </div>  
+                                 </div>
+                                 <div >
+                                    <div > 
+                                        <h5>Coordinates</h5> 
+                                       <div class="rowdiv">
+                                        <div class="carddiv"> 
+                                            <h5>Longitude</h5> 
+                                            <p>3.1390O N</p> 
+                                            </div> 
+                                            <div class="carddiv"> 
+                                            <h5>Latitude </h5> 
+                                            <p>101.6869O E</p> 
+                                            </div> 
+                                       </div>
+                                        </div> 
+                                 </div> 
+                                 </div> 
+                        </div>
+                    </div>
+
                 </div>
             </div>
 

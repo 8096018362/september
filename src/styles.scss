@@ -114,6 +114,9 @@ margin-top: 10px !important;
     color: white;
     text-align: center;
     border-radius: 50px;
+    width: max-content;
+    padding: 0px 18px;
+    font-size: 12px;
     .purple{
         background-color: #A92BB9;
     }
@@ -256,11 +259,11 @@ opacity: 100%;
             float: left;
             h5{
                 color:#2C2727;
-                font-size: 11px;
+                font-size: 12px;
             }
             p{
                 color:#646262;
-                font-size:11px;
+                font-size:12px;
             }
             .finstatus_approv{
                 background: #6CC668;
@@ -273,3 +276,4 @@ opacity: 100%;
         }
     }
  }
+

@@ -9,7 +9,7 @@ import { Router } from '@angular/router';
 })
 
 export class ListComponent {
-
+    showDetailsFlag:boolean=false;
     constructor(
         public router: Router
     ) { }
@@ -21,4 +21,14 @@ export class ListComponent {
     gotoNewEmployer() {
         this.router.navigate(['./hal/employer/add'])
     }
+
+    showdetails(type){
+        if(type == 'show'){
+            this.showDetailsFlag = true;
+        }else{
+            this.showDetailsFlag = false;
+        }
+    }
+
+
 }
