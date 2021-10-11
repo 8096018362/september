@@ -3,12 +3,12 @@ import { Router } from '@angular/router';
 
 @Component({
     selector: '',
-    templateUrl: './list.component.html',
-    styleUrls: ['./list.component.scss']
+    templateUrl: './edit.component.html',
+    styleUrls: ['./edit.component.scss']
 
 })
 
-export class ListComponent {
+export class EditProductComponent {
 
     constructor(
         public router: Router
@@ -18,8 +18,7 @@ export class ListComponent {
 
     }
 
-    
-    gotoEditProduct(obj) {
-        this.router.navigate(['./hal/product/edit'])
+    gotoProduct() {
+        this.router.navigate(['./hal/product/list'])
     }
 }
