@@ -1,5 +1,6 @@
 import { Component } from "@angular/core";
 import { Router } from '@angular/router';
+declare const $: any;
 
 @Component({
     selector: '',
@@ -15,7 +16,108 @@ export class EditProductComponent {
     ) { }
 
     ngOnInit() {
+        childRowTable();
 
+        function childRowTable() {
+            var childData = [
+                {
+                    "id": "1",
+                    "name": "Golden Pack",
+                    "valid_from": "20-02-2021",
+                    "valid_to": "20-02-2021",
+                    "tenure": "30 Days",
+                    
+                }, {
+                    "id": "2",
+                    "name": "Starter Pack",
+                    "valid_from": "20-02-2021",
+                    "valid_to": "20-02-2021",
+                    "tenure": "30 Days",
+                    
+                }, {
+                    "id": "3",
+                    "name": "Golden Pack",
+                    "valid_from": "20-02-2021",
+                    "valid_to": "20-02-2021",
+                    "tenure": "30 Days",
+                    
+                }, {
+                    "id": "4",
+                    "name": "Starter Pack",
+                    "valid_from": "20-02-2021",
+                    "valid_to": "20-02-2021",
+                    "tenure": "30 Days",
+                    
+                }, {
+                    "id": "5",
+                    "name": "Golden Pack",
+                    "valid_from": "20-02-2021",
+                    "valid_to": "20-02-2021",
+                    "tenure": "30 Days",
+                    
+                }, {
+                    "id": "6",
+                    "name": "Starter Pack",
+                    "valid_from": "20-02-2021",
+                    "valid_to": "20-02-2021",
+                    "tenure": "30 Days",
+                    
+                }, {
+                    "id": "7",
+                    "name": "Golden Pack",
+                    "valid_from": "20-02-2021",
+                    "valid_to": "20-02-2021",
+                    "tenure": "30 Days",
+                    
+                }, {
+                    "id": "8",
+                    "name": "Starter Pack",
+                    "valid_from": "20-02-2021",
+                    "valid_to": "20-02-2021",
+                    "tenure": "30 Days",
+                    
+                }, {
+                    "id": "9",
+                    "name": "Golden Pack",
+                    "valid_from": "20-02-2021",
+                    "valid_to": "20-02-2021",
+                    "tenure": "30 Days",
+                    
+                }, {
+                    "id": "10",
+                    "name": "Starter Pack",
+                    "valid_from": "20-02-2021",
+                    "valid_to": "20-02-2021",
+                    "tenure": "30 Days",
+                    
+                },
+
+            ];
+
+            var table = $('#chieldRow').DataTable({
+                data: childData,
+                "columns": [
+                    { "data": "id" },
+                    { "data": "name",
+                    "className": 'color_text' },
+                    { "data": "valid_from" },
+                    { "data": "valid_to" },
+                    { "data": "tenure" ,
+                    "className": 'color_text'},
+                    {
+                        className: 'editcenter',
+                render: (data, type, row, meta) => {
+                    return '<a class="f-12 mr-2 reactivate">Reactivate</a> <a class="f-12 disqualify">Disqualify </a>'
+                },
+                        "orderable": false,
+                        "data": null,
+                        "defaultContent": ''
+                    }
+                ]
+            });
+
+           
+        }
     }
 
     gotoProduct() {

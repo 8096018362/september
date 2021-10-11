@@ -277,3 +277,24 @@ opacity: 100%;
     }
  }
 
+
+.editcenter{
+    .disqualify{
+        color:#FF4A63 !important;
+    }
+    
+    .reactivate{
+        color:#EB9335 !important;
+    }
+}
+ 
+
+td.color_text{
+    color: #227386 !important;
+}
+
+.coloredTable{
+    tr:nth-child(even) {
+        // background-color: #eee !important;
+      }
+}
