@@ -234,12 +234,7 @@ opacity: 100%;
         color:red
     }
 }
-.table{
-    color:#585555!important
-}
-.table-striped tbody tr:nth-of-type(odd) {
-    background-color: white;
-}
+
 
 
 .containerdiv{
@@ -293,8 +288,10 @@ td.color_text{
     color: #227386 !important;
 }
 
-.coloredTable{
-    tr:nth-child(even) {
-        // background-color: #eee !important;
-      }
+.table{
+    color:#585555!important
+}
+
+.container-fluid{
+    margin-bottom:50px !important
 }
