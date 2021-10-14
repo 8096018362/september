@@ -22,70 +22,87 @@ export class ListComponent {
                     "requestPending": "1",
                     "requestApprove": "2",
                     "requestAmount": "KES 2000",
-                    "approveAmount": "KES 2000"
+                    "approveAmount": "KES 2000",
+                    "status": 'Pending'
                 }, {
                     "id": "1",
                     "name": "Tiger Nixon",
                     "requestPending": "1",
                     "requestApprove": "2",
                     "requestAmount": "KES 2000",
-                    "approveAmount": "KES 2000"
+                    "approveAmount": "KES 2000",
+                    "status": 'Approved'
                 }, {
                     "id": "1",
                     "name": "Tiger Nixon",
                     "requestPending": "1",
                     "requestApprove": "2",
                     "requestAmount": "KES 2000",
-                    "approveAmount": "KES 2000"
+                    "approveAmount": "KES 2000",
+                    "status": 'Rejected'
                 }, {
                     "id": "1",
                     "name": "Tiger Nixon",
                     "requestPending": "1",
                     "requestApprove": "2",
                     "requestAmount": "KES 2000",
-                    "approveAmount": "KES 2000"
+                    "approveAmount": "KES 2000",
+                    "status": 'Rejected'
+
                 }, {
                     "id": "1",
                     "name": "Tiger Nixon",
                     "requestPending": "1",
                     "requestApprove": "2",
                     "requestAmount": "KES 2000",
-                    "approveAmount": "KES 2000"
+                    "approveAmount": "KES 2000",
+                    "status": 'Rejected'
+
                 }, {
                     "id": "1",
                     "name": "Tiger Nixon",
                     "requestPending": "1",
                     "requestApprove": "2",
                     "requestAmount": "KES 2000",
-                    "approveAmount": "KES 2000"
+                    "approveAmount": "KES 2000",
+                    "status": 'Rejected'
+
                 }, {
                     "id": "1",
                     "name": "Tiger Nixon",
                     "requestPending": "1",
                     "requestApprove": "2",
                     "requestAmount": "KES 2000",
-                    "approveAmount": "KES 2000"
+                    "approveAmount": "KES 2000",
+                    "status": 'Rejected'
+
                 }, {
                     "id": "1",
                     "name": "Tiger Nixon",
                     "requestPending": "1",
                     "requestApprove": "2",
                     "requestAmount": "KES 2000",
-                    "approveAmount": "KES 2000"
+                    "approveAmount": "KES 2000",
+                    "status": 'Rejected'
+
                 }, {
                     "id": "1",
                     "name": "Tiger Nixon",
                     "requestPending": "1",
                     "requestApprove": "2",
                     "requestAmount": "KES 2000",
-                    "approveAmount": "KES 2000"
+                    "approveAmount": "KES 2000",
+                    "status": 'Rejected'
+
                 }, {
                     "id": "1",
                     "name": "Tiger Nixon",
                     "requestPending": "1",
                     "requestApprove": "2",
                     "requestAmount": "KES 2000",
-                    "approveAmount": "KES 2000"
+                    "approveAmount": "KES 2000",
+                    "status": 'Rejected'
+
                 },
 
             ];
@@ -98,51 +115,54 @@ export class ListComponent {
                 return '<div class="containerdiv">' +
                     ' <div class="row">' +
                     '<div class="col-md-12">'+
-                    '<h4>Employee Details</h4>'+
+                    '<h4>Finance Details</h4>'+
                     '  </div>'+
                     '  </div>'+
                     ' <div class="rowdiv">'+
                     ' <div class="carddiv">'+
-                    '<h5>Employee Name</h5>' +
-                    '<p>' + d.name + '</p>' +
-                    '</div>' +
-                    ' <div class="carddiv">' +
                     '<h5>Finance ID</h5>' +
-                    '<p>' + d.approveAmount + '</p>' +
+                    '<p>546456</p>' +
                     '</div>' +
                     ' <div class="carddiv">' +
-                    '<h5>National ID</h5>' +
-                    '<p>' + d.approveAmount + '</p>' +
+                    '<h5>Request Date</h5>' +
+                    '<p>23/02/2021</p>' +
                     '</div>' +
                     ' <div class="carddiv">' +
-                    '<h5>Phone Number</h5>' +
-                    '<p>' + d.approveAmount + '</p>' +
+                    '<h5>Approved Date</h5>' +
+                    '<p>14/04/2021</p>' +
                     '</div>' +
+                    ' <div class="carddiv">' +
+                    '<h5>Finance Start Date</h5>' +
+                    '<p>14/04/2021</p>' +
+                    '</div>' +
+                    '</div>' +
+                    ' <div class="rowdiv">'+
                     ' <div class="carddiv">' +
                     '<h5>Finance Amount Requested</h5>' +
                     '<p>67890</p>' +
                     '</div>' +
+                    ' <div class="carddiv">'+
+                    '<h5>EMI Amount</h5>' +
+                    '<p>KES 800</p>' +
+                    '</div>' +
+                    ' <div class="carddiv">' +
+                    '<h5>EMI Due Date</h5>' +
+                    '<p>22/06/2021</p>' +
+                    '</div>' +
+                    ' <div class="carddiv">' +
+                    '<h5>Current EMI State</h5>' +
+                    '<p>3/5</p>' +
+                    '</div>' +
+                    '<div class="carddiv">' +
+                    '<h5>Status</h5>' +
+                    '<p class="finstatus_reject">Rejected</p>' +
+                    '</div>' +
+                                     
                     '</div>' +
                     ' <div class="rowdiv">'+
-                    ' <div class="carddiv">'+
-                    '<h5>Request Date</h5>' +
-                    '<p>22/06/2021</p>' +
-                    '</div>' +
-                    ' <div class="carddiv">' +
-                    '<h5>Approved Date</h5>' +
-                    '<p>22/06/2021</p>' +
-                    '</div>' +
-                    ' <div class="carddiv">' +
-                    '<h5>Finance Start Date</h5>' +
-                    '<p>22/06/2021</p>' +
-                    '</div>' +
-                    ' <div class="carddiv">' +
-                    '<h5>EMI Amount</h5>' +
-                    '<p>' + d.approveAmount + '</p>' +
-                    '</div>' +
-                    ' <div class="carddiv">' +
-                    '<h5>Status</h5>' +
-                    '<p class="finstatus_approv">Approved</p>' +
+                    '<div class="">' +
+                    '<h5>Reason</h5>' +
+                    '<p >It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using ‘Content here, content here’, making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for ‘lorem ipsum’ will uncover.</p>' +
                     '</div>' +
                     '</div>' +
                     '</div>';

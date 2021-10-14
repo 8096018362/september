@@ -86,6 +86,76 @@ export class ListComponent {
                     "requestApprove": "2",
                     "requestAmount": "KES 2000",
                     "approveAmount": "KES 2000"
+                }, {
+                    "id": "1",
+                    "name": "Tiger Nixon",
+                    "requestPending": "1",
+                    "requestApprove": "2",
+                    "requestAmount": "KES 2000",
+                    "approveAmount": "KES 2000"
+                }, {
+                    "id": "1",
+                    "name": "Tiger Nixon",
+                    "requestPending": "1",
+                    "requestApprove": "2",
+                    "requestAmount": "KES 2000",
+                    "approveAmount": "KES 2000"
+                }, {
+                    "id": "1",
+                    "name": "Tiger Nixon",
+                    "requestPending": "1",
+                    "requestApprove": "2",
+                    "requestAmount": "KES 2000",
+                    "approveAmount": "KES 2000"
+                }, {
+                    "id": "1",
+                    "name": "Tiger Nixon",
+                    "requestPending": "1",
+                    "requestApprove": "2",
+                    "requestAmount": "KES 2000",
+                    "approveAmount": "KES 2000"
+                }, {
+                    "id": "1",
+                    "name": "Tiger Nixon",
+                    "requestPending": "1",
+                    "requestApprove": "2",
+                    "requestAmount": "KES 2000",
+                    "approveAmount": "KES 2000"
+                }, {
+                    "id": "1",
+                    "name": "Tiger Nixon",
+                    "requestPending": "1",
+                    "requestApprove": "2",
+                    "requestAmount": "KES 2000",
+                    "approveAmount": "KES 2000"
+                }, {
+                    "id": "1",
+                    "name": "Tiger Nixon",
+                    "requestPending": "1",
+                    "requestApprove": "2",
+                    "requestAmount": "KES 2000",
+                    "approveAmount": "KES 2000"
+                }, {
+                    "id": "1",
+                    "name": "Tiger Nixon",
+                    "requestPending": "1",
+                    "requestApprove": "2",
+                    "requestAmount": "KES 2000",
+                    "approveAmount": "KES 2000"
+                }, {
+                    "id": "1",
+                    "name": "Tiger Nixon",
+                    "requestPending": "1",
+                    "requestApprove": "2",
+                    "requestAmount": "KES 2000",
+                    "approveAmount": "KES 2000"
+                }, {
+                    "id": "1",
+                    "name": "Tiger Nixon",
+                    "requestPending": "1",
+                    "requestApprove": "2",
+                    "requestAmount": "KES 2000",
+                    "approveAmount": "KES 2000"
                 },
 
             ];
@@ -95,44 +165,68 @@ export class ListComponent {
             /* Formatting function for row details - modify as you need */
             function format(d) {
                 // `d` is the original data object for the row
-                return '<table cellpadding="5" cellspacing="0" border="0" style="padding-left:50px;background:#f5f5f5;">' +
-                    '<tr>' +
-                    '<td>Full name:</td>' +
-                    '<td>' + d.name + '</td>' +
-                    '</tr>' +
-                    '<tr>' +
-                    '<td>Extension number:</td>' +
-                    '<td>' + d.approveAmount + '</td>' +
-                    '</tr>' +
-                    '<tr>' +
-                    '<td>Extra info:</td>' +
-                    '<td>And any further details here (images etc)...</td>' +
-                    '</tr>' +
-                    '</table>';
+                return '<div class="containerdiv">' +
+                    ' <div class="row">' +
+                    '<div class="col-md-12">' +
+                    '<h4>Finance Details</h4>' +
+                    '  </div>' +
+                    '  </div>' +
+                    ' <div class="rowdiv">' +
+                    ' <div class="carddiv">' +
+                    '<h5>Finance Date</h5>' +
+                    '<p>25/02/2021</p>' +
+                    '</div>' +
+                    ' <div class="carddiv">' +
+                    '<h5>Finance Approved Date</h5>' +
+                    '<p>29/02/2021</p>' +
+                    '</div>' +
+                    ' <div class="carddiv">' +
+                    '<h5>Disbursement Date</h5>' +
+                    '<p>14/05/2021</p>' +
+                    '</div>' +
+                    ' <div class="carddiv">' +
+                    '<h5>Amount</h5>' +
+                    '<p>KES 678</p>' +
+                    '</div>' +
+                    ' <div class="carddiv">' +
+                    '<h5>Mpesa Receipt</h5>' +
+                    '<p>67890</p>' +
+                    '</div>' +
+                    '</div>' +
+                    ' <div class="rowdiv">' +
+                    ' <div class="carddiv">' +
+                    '<h5>Status</h5>' +
+                    '<p class="finstatus_approv">Approved</p>' +
+                    '</div>' +
+                    '</div>' +
+                    '</div>';
             }
 
 
 
             var table = $('#chieldRow').DataTable({
                 data: childData,
-                "columns": [
+                bLengthChange: false,
+                bFilter: false,
+                columns: [
+
+                    { "data": "name" },
+                    { "data": "requestPending" },
+                    { "data": "requestApprove" },
+                    { "data": "requestAmount" },
+                    { "data": "approveAmount" },
                     {
                         "className": 'details-control',
                         "orderable": false,
                         "data": null,
                         "defaultContent": ''
-                    },
-                    { "data": "name" },
-                    { "data": "requestPending" },
-                    { "data": "requestApprove" },
-                    { "data": "requestAmount" },
-                    { "data": "approveAmount" }
+                    }
                 ],
                 "order": [[1, 'asc']]
             });
 
             // Add event listener for opening and closing details
-            $('#chieldRow tbody').on('click', 'td.details-control', function () {
+            $('#chieldRow tbody').on('click', 'td', function () {
                 var tr = $(this).closest('tr');
                 var row = table.row(tr);
 
