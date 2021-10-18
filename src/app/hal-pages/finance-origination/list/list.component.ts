@@ -154,8 +154,8 @@ export class ListComponent {
                     <p>3/5</p>  
                     </div>  
                     <div class="carddiv">  
-                    <h5>Status</h5>  
-                    <p class="finstatus_reject">${d.status}</p>'  
+                    <h5>Status</h5> 
+                    ${d.status == 'Rejected' ? `<p class="finstatus_reject">${d.status}</p>` : d.status == 'Approved' ? `<p class="finstatus_approv">${d.status}</p>` : `<p class="finstatus_pending">${d.status}</p>`}
                     </div>   
                     </div>  
                     <div class="rowdiv"> 
@@ -204,6 +204,7 @@ export class ListComponent {
                     tr.addClass('shown');
                 }
             });
+
 
         }
     }
