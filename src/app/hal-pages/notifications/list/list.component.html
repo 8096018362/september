@@ -14,57 +14,58 @@
         </div>
 
         <div class="row clearfix">
-            <div class="col-sm-12">
-                <!-- <div class="row clearfix">
-                    <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 ccol">
-                        <div class="card kpi-card">
-                            <div class="body">
-                                <div class="row box1">
-                                    <div class="col-sm-3 col-xs-3 col-3 m-b-0 m-t-10" style="margin: auto !important;">
-                                        <img src="assets/images/finance/approved.svg" />
-                                    </div>
-                                    <div class="col-sm-9 col-xs-9 col-9 m-b-0 m-t-10">
-                                        <div class="row">
-                                            <div class="col-sm-12 col-xs-12 col-12 m-b-5">
-                                                <div class="card-sub-title">Average Credit Score</div>
-                                                <div class="card-sub-value">55</div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+            <div class="col-sm-4" (click)="selectTnype('SMS')">
+                <div class="card  m-t-0 card1" [ngClass]="showTemplate =='SMS'? 'cardSms': 'unSelectCard'">
+                    <div class="div1">
+                        <img *ngIf="showTemplate != 'SMS'"
+                            src="./assets/images/notification/sms-notifications-normal-icon.svg">
+                        <img *ngIf="showTemplate == 'SMS'"
+                            src="./assets/images/notification/sms-notifications-active-icon.svg">
+                    </div>
+                    <div class="div2">
+                        <div class="title"> SMS</div>
+                        <div class="value">
+                            Requests
                         </div>
                     </div>
-                    <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 ccol">
-                        <div class="card kpi-card">
-                            <div class="body">
-                                <div class="row box2">
-                                    <div class="col-sm-3 col-xs-3 col-3 m-b-0 m-t-10" style="margin: auto !important;">
-                                        <img src="assets/images/finance/pending.svg" />
-                                    </div>
-                                    <div class="col-sm-9 col-xs-9 col-9 m-b-0 m-t-10">
-                                        <div class="row">
-                                            <div class="col-sm-12 col-xs-12 col-12 m-b-5">
-                                                <div class="card-sub-title">Dense Credit Score Range</div>
-                                                <div class="card-sub-value">30-35</div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                </div> -->
+                </div>
             </div>
-            <div class="col-sm-12 col-12">
-                <div class="card">
-                    <div class="body">
-
+            <div class="col-sm-4" (click)="selectTnype('Push')">
+                <div class="card  m-t-0 card1" [ngClass]="showTemplate =='Push'? 'cardPush': 'unSelectCard'">
+                    <div class="div1">
+                        <img class="tabImg" *ngIf="showTemplate != 'Push'"
+                            src="./assets/images/notification/push-notifications-normal-icon.svg">
+                        <img class="tabImg" *ngIf="showTemplate == 'Push'"
+                            src="./assets/images/notification/push-notifications-active-icon.svg">
+                    </div>
+                    <div class="div2">
+                        <div class="title"> Push</div>
+                        <div class="value">
+                            Notifications
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-4" (click)="selectTnype('Email')">
+                <div class="card  m-t-0 card1" [ngClass]="showTemplate =='Email'? 'cardEmail': 'unSelectCard'">
+                    <div class="div1">
+                        <img *ngIf="showTemplate != 'Email'"
+                            src="./assets/images/notification/email-notifications-normal-icon.svg">
+                        <img *ngIf="showTemplate == 'Email'"
+                            src="./assets/images/notification/email-notifications-active-icon.svg">
+                    </div>
+                    <div class="div2">
+                        <div class="title"> Email</div>
+                        <div class="value">
+                            Notifications
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
+        <!-- <app-sms *ngIf="showTemplate == 'SMS'"></app-sms>
+        <app-notification *ngIf="showTemplate == 'Push'"></app-notification>
+        <app-email-notifications *ngIf="showTemplate == 'Email'"></app-email-notifications> -->
     </div>
 
 </section>
