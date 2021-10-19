@@ -1,6 +1,99 @@
-.row {
-    .ccol{
-        padding-left: 10px;
-        padding-right: 10px;
+.cardSms {
+    border: 3px solid #3FC6F3;
+    border-bottom: 6px solid #3FC6F3;
+
+    .div1 {
+        border-right: 1px solid #3FC6F3;
+
     }
+
+    .div2 {
+        .value {
+            color: #3FC6F3;
+        }
+    }
+}
+
+.cardEmail {
+    border: 3px solid #4B39D5;
+    border-bottom: 6px solid #4B39D5;
+
+    .div1 {
+        border-right: 1px solid #4B39D5;
+    }
+
+    .div2 {
+        .value {
+            color: #4B39D5;
+        }
+    }
+}
+
+.cardPush {
+    border: 3px solid #109C8F;
+    border-bottom: 6px solid #109C8F;
+
+    .div1 {
+        border-right: 1px solid #109C8F;
+    }
+
+    .div2 {
+        .value {
+            color: #109C8F;
+        }
+    }
+}
+
+.unSelectCard {
+    border: 3px solid #AFBEBC;
+    border-bottom: 6px solid #AFBEBC;
+
+    .div1 {
+        border-right: 1px solid #AFBEBC;
+    }
+
+    .div2 {
+
+        .value {
+            color: #AFBEBC;
+        }
+    }
+}
+
+.card1 {
+    cursor: pointer;
+    width: 100%;
+    display: table;
+    height: 100px;
+
+    .div1 {
+        width: 25%;
+        display: table-cell;
+        text-align: center;
+        
+        img {
+            width: 60%;
+            margin-top: 20%;
+        }
+    }
+
+    .div2 {
+        display: table-cell;
+        padding-left: 20px;
+
+        .title {
+            font-size: 25px;
+            margin-top: 5%;
+            color: #aba4a4;
+        }
+
+        .value {
+            font-size: 22px;
+        }
+    }
+
+    .col-sm-4 {
+        text-align: center;
+    }
+
 }
