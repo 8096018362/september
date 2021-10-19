@@ -18,147 +18,88 @@ export class EmployerComponent {
         function childRowTable() {
             var childData = [
                 {
-                    "id": "1",
-                    "name": "Tiger Nixon",
-                    "requestPending": "1",
-                    "requestApprove": "2",
-                    "requestAmount": "KES 2000",
-                    "approveAmount": "KES 2000"
-                }, {
-                    "id": "1",
-                    "name": "Tiger Nixon",
-                    "requestPending": "1",
-                    "requestApprove": "2",
-                    "requestAmount": "KES 2000",
-                    "approveAmount": "KES 2000"
-                }, {
-                    "id": "1",
-                    "name": "Tiger Nixon",
-                    "requestPending": "1",
-                    "requestApprove": "2",
-                    "requestAmount": "KES 2000",
-                    "approveAmount": "KES 2000"
-                }, {
-                    "id": "1",
-                    "name": "Tiger Nixon",
-                    "requestPending": "1",
-                    "requestApprove": "2",
-                    "requestAmount": "KES 2000",
-                    "approveAmount": "KES 2000"
-                }, {
-                    "id": "1",
-                    "name": "Tiger Nixon",
-                    "requestPending": "1",
-                    "requestApprove": "2",
-                    "requestAmount": "KES 2000",
-                    "approveAmount": "KES 2000"
-                }, {
-                    "id": "1",
-                    "name": "Tiger Nixon",
-                    "requestPending": "1",
-                    "requestApprove": "2",
-                    "requestAmount": "KES 2000",
-                    "approveAmount": "KES 2000"
-                }, {
-                    "id": "1",
-                    "name": "Tiger Nixon",
-                    "requestPending": "1",
-                    "requestApprove": "2",
-                    "requestAmount": "KES 2000",
-                    "approveAmount": "KES 2000"
-                }, {
-                    "id": "1",
-                    "name": "Tiger Nixon",
-                    "requestPending": "1",
-                    "requestApprove": "2",
-                    "requestAmount": "KES 2000",
-                    "approveAmount": "KES 2000"
-                }, {
-                    "id": "1",
-                    "name": "Tiger Nixon",
-                    "requestPending": "1",
-                    "requestApprove": "2",
-                    "requestAmount": "KES 2000",
-                    "approveAmount": "KES 2000"
-                }, {
-                    "id": "1",
-                    "name": "Tiger Nixon",
-                    "requestPending": "1",
-                    "requestApprove": "2",
-                    "requestAmount": "KES 2000",
-                    "approveAmount": "KES 2000"
-                }, {
-                    "id": "1",
-                    "name": "Tiger Nixon",
-                    "requestPending": "1",
-                    "requestApprove": "2",
-                    "requestAmount": "KES 2000",
-                    "approveAmount": "KES 2000"
-                }, {
-                    "id": "1",
-                    "name": "Tiger Nixon",
-                    "requestPending": "1",
-                    "requestApprove": "2",
-                    "requestAmount": "KES 2000",
-                    "approveAmount": "KES 2000"
-                }, {
-                    "id": "1",
-                    "name": "Tiger Nixon",
-                    "requestPending": "1",
-                    "requestApprove": "2",
-                    "requestAmount": "KES 2000",
-                    "approveAmount": "KES 2000"
-                }, {
-                    "id": "1",
-                    "name": "Tiger Nixon",
-                    "requestPending": "1",
-                    "requestApprove": "2",
-                    "requestAmount": "KES 2000",
-                    "approveAmount": "KES 2000"
-                }, {
-                    "id": "1",
-                    "name": "Tiger Nixon",
-                    "requestPending": "1",
-                    "requestApprove": "2",
-                    "requestAmount": "KES 2000",
-                    "approveAmount": "KES 2000"
-                }, {
-                    "id": "1",
-                    "name": "Tiger Nixon",
-                    "requestPending": "1",
-                    "requestApprove": "2",
-                    "requestAmount": "KES 2000",
-                    "approveAmount": "KES 2000"
-                }, {
-                    "id": "1",
-                    "name": "Tiger Nixon",
-                    "requestPending": "1",
-                    "requestApprove": "2",
-                    "requestAmount": "KES 2000",
-                    "approveAmount": "KES 2000"
-                }, {
-                    "id": "1",
-                    "name": "Tiger Nixon",
-                    "requestPending": "1",
-                    "requestApprove": "2",
-                    "requestAmount": "KES 2000",
-                    "approveAmount": "KES 2000"
-                }, {
-                    "id": "1",
-                    "name": "Tiger Nixon",
-                    "requestPending": "1",
-                    "requestApprove": "2",
-                    "requestAmount": "KES 2000",
-                    "approveAmount": "KES 2000"
-                }, {
-                    "id": "1",
-                    "name": "Tiger Nixon",
-                    "requestPending": "1",
-                    "requestApprove": "2",
-                    "requestAmount": "KES 2000",
-                    "approveAmount": "KES 2000"
+                    name: 'Faisal',
+                    createdAt: '11/11/2022',
+                    nationalId: 'KT0323455',
+                    phoneNumber: '+2541283621',
+                    total: 'KES 10,100'
                 },
-
+                {
+                    name: 'Yousef',
+                    createdAt: '11/11/2022',
+                    nationalId: 'KT0323455',
+                    phoneNumber: '+2541283621',
+                    total: 'KES 10,300'
+                },
+                {
+                    name: 'Faisal',
+                    createdAt: '11/11/2022',
+                    nationalId: 'KT0323455',
+                    phoneNumber: '+2541283621',
+                    total: 'KES 10,030'
+                },
+                {
+                    name: 'Faisal',
+                    createdAt: '11/11/2022',
+                    nationalId: 'KT0323455',
+                    phoneNumber: '+2541283621',
+                    total: 'KES 30,000'
+                },
+                {
+                    name: 'Faisal',
+                    createdAt: '11/11/2022',
+                    nationalId: 'KT0323455',
+                    phoneNumber: '+2541283621',
+                    total: 'KES 14,000'
+                },
+                {
+                    name: 'Yousef',
+                    createdAt: '11/11/2022',
+                    nationalId: 'KT0323455',
+                    phoneNumber: '+2541283621',
+                    total: 'KES 19,020'
+                }, {
+                    name: 'Faisal',
+                    createdAt: '11/11/2022',
+                    nationalId: 'KT0323455',
+                    phoneNumber: '+2541283621',
+                    total: 'KES 10,100'
+                },
+                {
+                    name: 'Yousef',
+                    createdAt: '11/11/2022',
+                    nationalId: 'KT0323455',
+                    phoneNumber: '+2541283621',
+                    total: 'KES 10,300'
+                },
+                {
+                    name: 'Faisal',
+                    createdAt: '11/11/2022',
+                    nationalId: 'KT0323455',
+                    phoneNumber: '+2541283621',
+                    total: 'KES 10,030'
+                },
+                {
+                    name: 'Faisal',
+                    createdAt: '11/11/2022',
+                    nationalId: 'KT0323455',
+                    phoneNumber: '+2541283621',
+                    total: 'KES 30,000'
+                },
+                {
+                    name: 'Faisal',
+                    createdAt: '11/11/2022',
+                    nationalId: 'KT0323455',
+                    phoneNumber: '+2541283621',
+                    total: 'KES 14,000'
+                },
+                {
+                    name: 'Yousef',
+                    createdAt: '11/11/2022',
+                    nationalId: 'KT0323455',
+                    phoneNumber: '+2541283621',
+                    total: 'KES 19,020'
+                }
             ];
 
 
@@ -219,20 +160,20 @@ export class EmployerComponent {
                     '</div>';
             }
 
-            function popover(d){
+            function popover(d) {
                 return '<div class="popoverdiv">' +
-                ' <div class="row">' +
-                '<div class="col-md-12">' +
-                // '<img src="../../../../assets/images/user-setting.svg">'+
-                '<h4 data-toggle="modal" data-target="#approveModal">Approve</h4>' +
-                '  </div>' +
-                '<div class="col-md-12">' +
-                // '<img src="../../../../assets/images/user-setting.svg">'+
-                '<h4 data-toggle="modal" data-target="#rejectModal">Reject</h4>' +
-                '  </div>' +
-                '  </div>' +
-               
-                '</div>'; 
+                    ' <div class="row">' +
+                    '<div class="col-md-12">' +
+                    // '<img src="../../../../assets/images/user-setting.svg">'+
+                    '<h4 data-toggle="modal" data-target="#approveModal">Approve</h4>' +
+                    '  </div>' +
+                    '<div class="col-md-12">' +
+                    // '<img src="../../../../assets/images/user-setting.svg">'+
+                    '<h4 data-toggle="modal" data-target="#rejectModal">Reject</h4>' +
+                    '  </div>' +
+                    '  </div>' +
+
+                    '</div>';
             }
 
 
@@ -242,10 +183,10 @@ export class EmployerComponent {
                 bFilter: false,
                 columns: [
                     { "data": "name" },
-                    { "data": "requestPending" },
-                    { "data": "requestApprove" },
-                    { "data": "requestAmount" },
-                    { "data": "approveAmount" },
+                    { "data": "createdAt" },
+                    { "data": "nationalId" },
+                    { "data": "phoneNumber" },
+                    { "data": "total" },
                     {
                         "className": 'action-btn',
                         "orderable": false,
