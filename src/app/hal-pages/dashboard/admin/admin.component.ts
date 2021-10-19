@@ -219,6 +219,21 @@ export class AdminComponent {
                     '</div>';
             }
 
+            function popover(d){
+                return '<div class="popoverdiv">' +
+                ' <div class="row">' +
+                '<div class="col-md-12">' +
+                // '<img src="../../../../assets/images/user-setting.svg">'+
+                '<h4 data-toggle="modal" data-target="#approveModal">Approve</h4>' +
+                '  </div>' +
+                '<div class="col-md-12">' +
+                // '<img src="../../../../assets/images/user-setting.svg">'+
+                '<h4 data-toggle="modal" data-target="#rejectModal">Reject</h4>' +
+                '  </div>' +
+                '  </div>' +
+               
+                '</div>'; 
+            }
 
 
             var table = $('#chieldRow').DataTable({
@@ -226,12 +241,17 @@ export class AdminComponent {
                 bLengthChange: false,
                 bFilter: false,
                 columns: [
-
                     { "data": "name" },
                     { "data": "requestPending" },
                     { "data": "requestApprove" },
                     { "data": "requestAmount" },
                     { "data": "approveAmount" },
+                    {
+                        "className": 'action-btn',
+                        "orderable": false,
+                        "data": null,
+                        "defaultContent": ''
+                    },
                     {
                         "className": 'details-control',
                         "orderable": false,
@@ -243,7 +263,7 @@ export class AdminComponent {
             });
 
             // Add event listener for opening and closing details
-            $('#chieldRow tbody').on('click', 'td', function () {
+            $('#chieldRow tbody').on('click', 'td.details-control', function () {
                 var tr = $(this).closest('tr');
                 var row = table.row(tr);
 
@@ -258,6 +278,27 @@ export class AdminComponent {
                     tr.addClass('shown');
                 }
             });
+
+            $('#chieldRow tbody').on('click', 'td.action-btn', function () {
+                var tr = $(this).closest('tr');
+                var row = table.row(tr);
+
+                if (row.child.isShown()) {
+
+                    // This row is already open - close it
+                    row.child.hide();
+                    tr.removeClass('shown1');
+                }
+                else {
+
+                    // Open this row
+                    row.child(popover(row.data())).show();
+                    tr.addClass('shown1');
+                }
+            });
+
+
+
 
         }
     }

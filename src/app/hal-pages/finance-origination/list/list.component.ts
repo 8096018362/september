@@ -179,6 +179,7 @@ export class ListComponent {
                     { "data": "requestApprove" },
                     { "data": "requestAmount" },
                     { "data": "approveAmount" },
+                  
                     {
                         "className": 'details-control',
                         "orderable": false,

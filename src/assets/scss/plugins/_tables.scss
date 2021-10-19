@@ -259,3 +259,15 @@ td.details-control {
 tr.shown td.details-control {
   background: url("../images/details_close.png") no-repeat center center;
 }
+
+td.action-btn:after{
+  content: '\2807';
+  font-size: 20px;
+  cursor: pointer;
+}
+
+tr.shown1 td.action-btn {
+  content: '\2807';
+  font-size: 20px;
+  cursor: pointer;
+}
