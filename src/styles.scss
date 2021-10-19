@@ -238,15 +238,30 @@ opacity: 100%;
     }
 }
 
-.popoverdiv{
+.m-b-40{
+    margin-bottom: 40px;
+}
+
+.newrow{
+    // position: relative;
     position: absolute;
     background: #fff;
     right: 6vw;
     top: 6vw;
+    width: 200px;
+}
+
+.popoverdiv{
+  
     h4{
         font-size: 15px;
         margin: 10px 15px;
         cursor: pointer;
+        color:#2C2727 !important;
+        a{
+        color:#2C2727 !important;
+
+        }
     }
 }
 
@@ -355,4 +370,8 @@ td.color_text{
         margin-top: 10px !important;
     }
     
+}
+
+.w-30{
+    width:30%;
 }

@@ -234,7 +234,7 @@ export class ListComponent {
           '  </div>' +
           '<div class="col-md-12">' +
           // '<img src="../../../../assets/images/user-setting.svg">'+
-          '<h4 >Download Employee List</h4>' +
+          '<h4 ><a>Download Employee List</a></h4>' +
           '  </div>' +
           '  </div>' +
           '</div>';
@@ -287,19 +287,19 @@ export class ListComponent {
       $('#chieldRow tbody').on('click', 'td.action-btn', function () {
         var tr = $(this).closest('tr');
         var row = table.row(tr);
-
+       
         if (row.child.isShown()) {
-
           // This row is already open - close it
           row.child.hide();
           tr.removeClass('shown1');
         }
         else {
-
           // Open this row
           row.child(popover(row.data())).show();
+          row.child().addClass('newrow')
           tr.addClass('shown1');
         }
+        
       });
 
 
