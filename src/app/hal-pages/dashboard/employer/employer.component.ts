@@ -1,22 +1,19 @@
 import { Component } from "@angular/core";
 declare const $: any;
-declare const ApexCharts: any;
+// declare const ApexCharts: any;
 
 @Component({
     selector: '',
-    templateUrl: './admin.component.html',
-    styleUrls: ['./admin.component.scss']
+    templateUrl: './employer.component.html',
+    styleUrls: ['./employer.component.scss']
 
 })
 
-export class AdminComponent {
-    constructor() {
-       
-    }
+export class EmployerComponent {
+    constructor() { }
 
     ngOnInit() {
         childRowTable();
-        this.chart1()
 
         function childRowTable() {
             var childData = [
@@ -172,7 +169,7 @@ export class AdminComponent {
                 return '<div class="containerdiv">' +
                     ' <div class="row">' +
                     '<div class="col-md-12">' +
-                    '<h4>Employee Details</h4>' +
+                    '<h4>Finance Details</h4>' +
                     '  </div>' +
                     '  </div>' +
                     ' <div class="rowdiv">' +
@@ -222,20 +219,20 @@ export class AdminComponent {
                     '</div>';
             }
 
-            function popover(d) {
+            function popover(d){
                 return '<div class="popoverdiv">' +
-                    ' <div class="row">' +
-                    '<div class="col-md-12">' +
-                    // '<img src="../../../../assets/images/user-setting.svg">'+
-                    '<h4 data-toggle="modal" data-target="#approveModal">Approve</h4>' +
-                    '  </div>' +
-                    '<div class="col-md-12">' +
-                    // '<img src="../../../../assets/images/user-setting.svg">'+
-                    '<h4 data-toggle="modal" data-target="#rejectModal">Reject</h4>' +
-                    '  </div>' +
-                    '  </div>' +
-
-                    '</div>';
+                ' <div class="row">' +
+                '<div class="col-md-12">' +
+                // '<img src="../../../../assets/images/user-setting.svg">'+
+                '<h4 data-toggle="modal" data-target="#approveModal">Approve</h4>' +
+                '  </div>' +
+                '<div class="col-md-12">' +
+                // '<img src="../../../../assets/images/user-setting.svg">'+
+                '<h4 data-toggle="modal" data-target="#rejectModal">Reject</h4>' +
+                '  </div>' +
+                '  </div>' +
+               
+                '</div>'; 
             }
 
 
@@ -305,87 +302,87 @@ export class AdminComponent {
 
         }
     }
-    private chart1() {
-        var options = {
-            chart: {
-                height: 350,
-                type: 'bar',
-                toolbar: {
-                    show: false
-                }
-            },
-            plotOptions: {
-                bar: {
-                    horizontal: false,
-                    endingShape: 'rounded',
-                    distributed: true,
-                    columnWidth: '25%',
-                    color: {
-                        backgroundBarColors: ['#F9A44A', '#2EAFBC', '#F35F67', '#5A36CC'],
-                    }
-                },
-            },
-            dataLabels: {
-                enabled: false
-            },
-            stroke: {
-                show: true,
-                width: 2,
-                colors: ['transparent']
-            },
-            series: [{
-                name: '',
-                data: [44, 55, 57, 56, 61, 58, 63, 60, 66]
-            }],
-            xaxis: {
-                categories: ['Tup', 'Hur', '5G Cap', 'ABC', 'Ang', 'Ari', 'Asp', 'Bles', 'Bomi'],
-                labels: {
-                    style: {
-                        colors: '#52504F',
-                        fontSize: '18px',
-                        fontWeight: 'bold',
-                        fontFamily: 'Source Sans Pro sans-serif !important',
-                    }
-                }, title: {
-                    text: '',
-                    style: {
-                        fontSize: '22px',
-                        fontWeight: 'bold',
-                        fontFamily: 'Source Sans Pro sans-serif !important',
-                        color: '#585555'
-                    },
-                },
-            },
-            yaxis: {
-                labels: {
-                    style: {
-                        colors: '#52504F',
-                        fontSize: '18px',
-                        fontWeight: 'bold',
-                        fontFamily: 'Source Sans Pro sans-serif !important',
-                    }
-                }
-            },
-            fill: {
-                opacity: 1
+    // private chart1() {
+    //     var options = {
+    //         chart: {
+    //             height: 350,
+    //             type: 'bar',
+    //             toolbar: {
+    //                 show: false
+    //             }
+    //         },
+    //         plotOptions: {
+    //             bar: {
+    //                 horizontal: false,
+    //                 endingShape: 'rounded',
+    //                 distributed: true,
+    //                 columnWidth: '25%',
+    //                 color: {
+    //                     backgroundBarColors: ['#F9A44A', '#2EAFBC', '#F35F67', '#5A36CC'],
+    //                 }
+    //             },
+    //         },
+    //         dataLabels: {
+    //             enabled: false
+    //         },
+    //         stroke: {
+    //             show: true,
+    //             width: 2,
+    //             colors: ['transparent']
+    //         },
+    //         series: [{
+    //             name: '',
+    //             data: [44, 55, 57, 56, 61, 58, 63, 60, 66]
+    //         }],
+    //         xaxis: {
+    //             categories: ['Tup', 'Hur', '5G Cap', 'ABC', 'Ang', 'Ari', 'Asp', 'Bles', 'Bomi'],
+    //             labels: {
+    //                 style: {
+    //                     colors: '#52504F',
+    //                     fontSize: '18px',
+    //                     fontWeight: 'bold',
+    //                     fontFamily: 'Source Sans Pro sans-serif !important',
+    //                 }
+    //             }, title: {
+    //                 text: '',
+    //                 style: {
+    //                     fontSize: '22px',
+    //                     fontWeight: 'bold',
+    //                     fontFamily: 'Source Sans Pro sans-serif !important',
+    //                     color: '#585555'
+    //                 },
+    //             },
+    //         },
+    //         yaxis: {
+    //             labels: {
+    //                 style: {
+    //                     colors: '#52504F',
+    //                     fontSize: '18px',
+    //                     fontWeight: 'bold',
+    //                     fontFamily: 'Source Sans Pro sans-serif !important',
+    //                 }
+    //             }
+    //         },
+    //         fill: {
+    //             opacity: 1
 
-            },
-            tooltip: {
-                y: {
-                    formatter: function (val) {
-                        return "$ " + val + " thousands"
-                    }
-                }
-            }
-        }
+    //         },
+    //         tooltip: {
+    //             y: {
+    //                 formatter: function (val) {
+    //                     return "$ " + val + " thousands"
+    //                 }
+    //             }
+    //         }
+    //     }
 
-        var chart = new ApexCharts(
-            document.querySelector("#chart1"),
-            options
-        );
+    //     var chart = new ApexCharts(
+    //         document.querySelector("#chart1"),
+    //         options
+    //     );
 
-        chart.render();
+    //     chart.render();
 
 
-    }
+    // }
 }

@@ -171,6 +171,8 @@ export class ListComponent {
 
             var table = $('#chieldRow').DataTable({
                 data: childData,
+                bLengthChange: false,
+                bFilter: false,
                 "columns": [
 
                     { "data": "name" },
@@ -178,7 +180,7 @@ export class ListComponent {
                     { "data": "requestApprove" },
                     { "data": "requestAmount" },
                     { "data": "approveAmount" },
-                  
+
                     {
                         "className": 'details-control',
                         "orderable": false,

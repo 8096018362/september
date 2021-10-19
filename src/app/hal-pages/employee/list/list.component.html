@@ -14,8 +14,90 @@
         </div>
         <div class="row clearfix">
             <br>
+            <div class="col-12" style="text-align: right;margin-bottom: 20px;">
+                <span class="cus-btn2 primaryBlue" (click)="gotoNewEmployee()">Add New Employee</span>
+            </div>
+            <br>
             <div class="col-12">
-                <div class="card dash-card" *ngFor="let a of [1,1,1,1,1,1,1,1]">
+
+                <div style="background:#FAFAFA !important">
+                    <div class="">
+                        <table id="chieldRow" class="table table-striped display" style="width:100%">
+                            <thead>
+                                <tr>
+                                    <th>Employee Name</th>
+                                    <th>Finance Due Date</th>
+                                    <th>National ID</th>
+                                    <th>Phone No.</th>
+                                    <th>Total Finance Amount</th>
+                                    <th></th>
+                                    <th></th>
+                                </tr>
+                            </thead>
+                        </table>
+
+                    </div>
+
+                    <div class="modal fade" id="approveModal" tabindex="-1" role="dialog"
+                        aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog" role="document">
+                            <div class="modal-content">
+                                <img src="assets/images/popup/save-now.svg" />
+                                <div class="headerText">
+                                    <div class="titleDiv">Approve Now!</div>
+                                    <div>
+                                        <span> &nbsp; &nbsp;
+                                            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                                            &nbsp; &nbsp; &nbsp; &nbsp;
+                                        </span>
+                                    </div>
+                                </div>
+
+                                <div class="modal-body">
+                                    <p>Are you sure you want to send this for approval?</p>
+                                </div>
+                                <div class="modal-footer" style="text-align:center">
+                                    <button type="button" class="btn btn-info waves-effect savebtn">Approve</button>
+                                    <button type="button" class="btn btn-danger waves-effect cancelbtn"
+                                        data-dismiss="modal">Cancel</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="modal fade" id="rejectModal" tabindex="-1" role="dialog"
+                        aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog" role="document">
+                            <div class="modal-content">
+                                <img src="assets/images/popup/save-now.svg" />
+                                <div class="headerText">
+                                    <div class="titleDiv">Reject Now!</div>
+                                    <div>
+                                        <span> &nbsp; &nbsp;
+                                            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                                            &nbsp; &nbsp; &nbsp; &nbsp;
+                                        </span>
+                                    </div>
+                                </div>
+
+                                <div class="modal-body">
+                                    <p>Are you sure you want to reject this?</p>
+                                    <div class="customInput">
+                                        <label>Comments</label>
+                                        <textarea type="text" rows="4" placeholder="Enter Comments"></textarea>
+                                    </div>
+                                </div>
+                                <div class="modal-footer" style="text-align:center">
+                                    <button type="button" class="btn btn-info waves-effect savebtn">Reject</button>
+                                    <button type="button" class="btn btn-danger waves-effect cancelbtn"
+                                        data-dismiss="modal">Cancel</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <!-- <div class="card dash-card" *ngFor="let a of [1,1,1,1,1,1,1,1]">
                     <div class="body">
                         <div class="row">
 
@@ -42,7 +124,7 @@
                             </div>
                         </div>
                     </div>
-                </div>
+                </div> -->
             </div>
 
 

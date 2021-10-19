@@ -5,13 +5,18 @@
         <div class="menu">
             <ul class="list">
                 <li routerLinkActive="active">
-                    <a [routerLink]="loginType=='admin'?'hal/dashboard/admin':'hal/dashboard/operator'">
+                    <!-- <a [routerLink]="loginType=='admin'?'hal/dashboard/admin':'hal/dashboard/operator'">
+                        <img src="./assets/images/sidemenu/dashboard.svg" width="10%">
+                        <span>Dashboard</span>
+                    </a> -->
+
+                    <a routerLink="hal/dashboard/employer">
                         <img src="./assets/images/sidemenu/dashboard.svg" width="10%">
                         <span>Dashboard</span>
                     </a>
                 </li>
 
-                <li routerLinkActive="active">
+                <!-- <li routerLinkActive="active">
                     <a href="#" onClick="return false;" class="menu-toggle">
                         <i class="fas fa-table"></i>
                         <span>Tables</span>
@@ -102,9 +107,9 @@
                             <a routerLink="ui/helper-classes">Helper Classes</a>
                         </li>
                     </ul>
-                </li>
+                </li> -->
 
-                <li routerLinkActive="active">
+                <!-- <li routerLinkActive="active">
                     <a routerLink="hal/employer/list">
                         <img src="./assets/images/sidemenu/emp-mng.svg" width="10%">
                         <span>Employer Management</span>
@@ -116,7 +121,7 @@
                         <img src="./assets/images/sidemenu/prod-mng.svg" width="10%">
                         <span>Product Management</span>
                     </a>
-                </li>
+                </li> -->
 
                 <li routerLinkActive="active">
                     <a routerLink="hal/employee/list">
@@ -147,7 +152,7 @@
                     </a>
                 </li>
 
-                <li routerLinkActive="active">
+                <!-- <li routerLinkActive="active">
                     <a routerLink="hal/cs/list">
                         <img src="./assets/images/sidemenu/cre-src-mng.svg" width="10%">
                         <span>CS Management</span>
@@ -158,7 +163,7 @@
                         <img src="./assets/images/sidemenu/commodity-mutarbah.svg" width="10%">
                         <span>CM Management</span>
                     </a>
-                </li>
+                </li> -->
 
                 <li routerLinkActive="active">
                     <a routerLink="hal/notifications/list">
