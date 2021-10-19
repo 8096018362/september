@@ -62,18 +62,18 @@ const routes: Routes = [
     //     path: 'widget',
     //     loadChildren: () => import('./widget/widget.module').then(m => m.WidgetModule)
     // },
-    {
-        path: 'ui',
-        loadChildren: () => import('./ui/ui.module').then(m => m.UiModule)
-    },
+    // {
+    //     path: 'ui',
+    //     loadChildren: () => import('./ui/ui.module').then(m => m.UiModule)
+    // },
     // {
     //     path: 'forms',
     //     loadChildren: () => import('./forms/forms.module').then(m => m.FormModule)
     // },
-    {
-        path: 'tables',
-        loadChildren: () => import('./tables/tables.module').then(m => m.TablesModule)
-    },
+    // {
+    //     path: 'tables',
+    //     loadChildren: () => import('./tables/tables.module').then(m => m.TablesModule)
+    // },
     // {
     //     path: 'media',
     //     loadChildren: () => import('./media/media.module').then(m => m.MediaModule)
