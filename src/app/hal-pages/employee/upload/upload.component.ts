@@ -1,20 +1,14 @@
-import { Component } from "@angular/core";
-import { Router } from "@angular/router";
+import { Component, OnInit } from '@angular/core';
 declare const $: any;
 
 @Component({
-  selector: '',
-  templateUrl: './list.component.html',
-  styleUrls: ['./list.component.scss']
+  selector: 'app-upload',
+  templateUrl: './upload.component.html',
+  styleUrls: ['./upload.component.scss']
 })
+export class UploadComponent implements OnInit {
 
-export class ListComponent {
-
-  constructor(
-    public router: Router
-  ) { }
-
- 
+  constructor() { }
 
   ngOnInit() {
     childRowTable();
@@ -230,7 +224,7 @@ export class ListComponent {
           '  </div>' +
           '<div class="col-md-12">' +
           // '<img src="../../../../assets/images/user-setting.svg">'+
-          '<h4 ><a href="#/hal/employee/upload">Upload Employee List</a></h4>' +
+          '<h4 >Upload Employee List</h4>' +
           '  </div>' +
           '<div class="col-md-12">' +
           // '<img src="../../../../assets/images/user-setting.svg">'+
@@ -308,7 +302,4 @@ export class ListComponent {
     }
   }
 
-  gotoNewEmployee() {
-    this.router.navigate(['./hal/employee/add'])
-  }
 }
