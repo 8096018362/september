@@ -186,24 +186,25 @@ export class EmployerComponent {
                 bFilter: false,
                 columns: [
                     {
-                        data: "name"
+                        data: "name",
+                        className: "name"
                     },
                     {
-                        data: "createdAt"
+                        data: "createdAt",
+                        className: "date"
                     },
                     {
                         data: "nationalId",
                         className: 'nationalId',
-                        // render: (data, type, full, meta) => {
-                        //     if (data != null) {
-                        //         return '<div>' + data + '</div>';
-                        //     } else {
-                        //         return '-';
-                        //     }
-                        // }
                     },
-                    { data: "phoneNumber" },
-                    { data: "total" },
+                    {
+                        data: "phoneNumber",
+                        className: 'phoneNumber'
+                    },
+                    {
+                        data: "total",
+                        className: "amount"
+                    },
                     {
                         className: 'action-btn',
                         orderable: false,

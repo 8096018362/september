@@ -14,7 +14,7 @@ export class ListComponent {
     public router: Router
   ) { }
 
- 
+
 
   ngOnInit() {
     childRowTable();
@@ -22,143 +22,87 @@ export class ListComponent {
       var childData = [
         {
           "id": "1",
-          "name": "Tiger Nixon",
-          "requestPending": "1",
-          "requestApprove": "2",
-          "requestAmount": "KES 2000",
+          "name": "Faisal",
+          "requestPending": "30/04/2021",
+          "requestApprove": "KT0323455",
+          "requestAmount": "+2541283621",
           "approveAmount": "KES 2000"
         }, {
           "id": "1",
-          "name": "Tiger Nixon",
-          "requestPending": "1",
-          "requestApprove": "2",
-          "requestAmount": "KES 2000",
+          "name": "Yousef",
+          "requestPending": "30/04/2021",
+          "requestApprove": "KT0323455",
+          "requestAmount": "+2541283621",
           "approveAmount": "KES 2000"
         }, {
           "id": "1",
-          "name": "Tiger Nixon",
-          "requestPending": "1",
-          "requestApprove": "2",
-          "requestAmount": "KES 2000",
+          "name": "Yousef",
+          "requestPending": "30/04/2021",
+          "requestApprove": "KT0323455",
+          "requestAmount": "+2541283621",
           "approveAmount": "KES 2000"
         }, {
           "id": "1",
-          "name": "Tiger Nixon",
-          "requestPending": "1",
-          "requestApprove": "2",
-          "requestAmount": "KES 2000",
+          "name": "Yousef",
+          "requestPending": "30/04/2021",
+          "requestApprove": "KT0323455",
+          "requestAmount": "+2541283621",
           "approveAmount": "KES 2000"
         }, {
           "id": "1",
-          "name": "Tiger Nixon",
-          "requestPending": "1",
-          "requestApprove": "2",
-          "requestAmount": "KES 2000",
+          "name": "Yousef",
+          "requestPending": "30/04/2021",
+          "requestApprove": "KT0323455",
+          "requestAmount": "+2541283621",
           "approveAmount": "KES 2000"
         }, {
           "id": "1",
-          "name": "Tiger Nixon",
-          "requestPending": "1",
-          "requestApprove": "2",
-          "requestAmount": "KES 2000",
+          "name": "Yousef",
+          "requestPending": "30/04/2021",
+          "requestApprove": "KT0323455",
+          "requestAmount": "+2541283621",
           "approveAmount": "KES 2000"
         }, {
           "id": "1",
-          "name": "Tiger Nixon",
-          "requestPending": "1",
-          "requestApprove": "2",
-          "requestAmount": "KES 2000",
+          "name": "Faisel",
+          "requestPending": "30/04/2021",
+          "requestApprove": "KT0323455",
+          "requestAmount": "+2541283621",
           "approveAmount": "KES 2000"
         }, {
           "id": "1",
-          "name": "Tiger Nixon",
-          "requestPending": "1",
-          "requestApprove": "2",
-          "requestAmount": "KES 2000",
+          "name": "Yousef",
+          "requestPending": "30/04/2021",
+          "requestApprove": "KT0323455",
+          "requestAmount": "+2541283621",
           "approveAmount": "KES 2000"
         }, {
           "id": "1",
-          "name": "Tiger Nixon",
-          "requestPending": "1",
-          "requestApprove": "2",
-          "requestAmount": "KES 2000",
+          "name": "Yousef",
+          "requestPending": "30/04/2021",
+          "requestApprove": "KT0323452",
+          "requestAmount": "+2541283621",
           "approveAmount": "KES 2000"
         }, {
           "id": "1",
-          "name": "Tiger Nixon",
-          "requestPending": "1",
-          "requestApprove": "2",
-          "requestAmount": "KES 2000",
+          "name": "Yousef",
+          "requestPending": "30/04/2021",
+          "requestApprove": "KT0323452",
+          "requestAmount": "+2541283621",
           "approveAmount": "KES 2000"
         }, {
           "id": "1",
-          "name": "Tiger Nixon",
-          "requestPending": "1",
-          "requestApprove": "2",
-          "requestAmount": "KES 2000",
+          "name": "Yousef",
+          "requestPending": "30/04/2021",
+          "requestApprove": "2KT032345",
+          "requestAmount": "+2541283621",
           "approveAmount": "KES 2000"
         }, {
           "id": "1",
-          "name": "Tiger Nixon",
-          "requestPending": "1",
-          "requestApprove": "2",
-          "requestAmount": "KES 2000",
-          "approveAmount": "KES 2000"
-        }, {
-          "id": "1",
-          "name": "Tiger Nixon",
-          "requestPending": "1",
-          "requestApprove": "2",
-          "requestAmount": "KES 2000",
-          "approveAmount": "KES 2000"
-        }, {
-          "id": "1",
-          "name": "Tiger Nixon",
-          "requestPending": "1",
-          "requestApprove": "2",
-          "requestAmount": "KES 2000",
-          "approveAmount": "KES 2000"
-        }, {
-          "id": "1",
-          "name": "Tiger Nixon",
-          "requestPending": "1",
-          "requestApprove": "2",
-          "requestAmount": "KES 2000",
-          "approveAmount": "KES 2000"
-        }, {
-          "id": "1",
-          "name": "Tiger Nixon",
-          "requestPending": "1",
-          "requestApprove": "2",
-          "requestAmount": "KES 2000",
-          "approveAmount": "KES 2000"
-        }, {
-          "id": "1",
-          "name": "Tiger Nixon",
-          "requestPending": "1",
-          "requestApprove": "2",
-          "requestAmount": "KES 2000",
-          "approveAmount": "KES 2000"
-        }, {
-          "id": "1",
-          "name": "Tiger Nixon",
-          "requestPending": "1",
-          "requestApprove": "2",
-          "requestAmount": "KES 2000",
-          "approveAmount": "KES 2000"
-        }, {
-          "id": "1",
-          "name": "Tiger Nixon",
-          "requestPending": "1",
-          "requestApprove": "2",
-          "requestAmount": "KES 2000",
-          "approveAmount": "KES 2000"
-        }, {
-          "id": "1",
-          "name": "Tiger Nixon",
-          "requestPending": "1",
-          "requestApprove": "2",
-          "requestAmount": "KES 2000",
+          "name": "Yousef",
+          "requestPending": "30/04/2021",
+          "requestApprove": "KT0323452",
+          "requestAmount": "+2541283621",
           "approveAmount": "KES 2000"
         },
 
@@ -220,7 +164,7 @@ export class ListComponent {
           '</div>';
       }
 
-     
+
       function popover(d) {
         return '<div class="popoverdiv">' +
           ' <div class="row">' +
@@ -246,15 +190,18 @@ export class ListComponent {
         bLengthChange: false,
         bFilter: false,
         columns: [
-          { "data": "name" },
-          { "data": "requestPending" },
-          { "data": "requestApprove" },
-          { "data": "requestAmount" },
-          { "data": "approveAmount" },
+          { data: 'name' },
+          { data: "requestPending" },
           {
-            "className": 'action-btn',
-            "orderable": false,
-            "data": null,
+            data: "requestApprove",
+            className: 'nationalId',
+          },
+          { data: "requestAmount" },
+          { data: "approveAmount" },
+          {
+            className: 'action-btn',
+            orderable: false,
+            data: null,
             "defaultContent": ''
           },
           {
@@ -287,7 +234,7 @@ export class ListComponent {
       $('#chieldRow tbody').on('click', 'td.action-btn', function () {
         var tr = $(this).closest('tr');
         var row = table.row(tr);
-       
+
         if (row.child.isShown()) {
           // This row is already open - close it
           row.child.hide();
@@ -299,7 +246,7 @@ export class ListComponent {
           row.child().addClass('newrow')
           tr.addClass('shown1');
         }
-        
+
       });
 
 
