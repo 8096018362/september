@@ -270,7 +270,7 @@ opacity: 100%;
     background: #EFF5F7;
     padding: 2vw;
     h4{
-        color:#2B86D0;
+        color:#082339;
         font-size: 16px;
         margin: 0;
     }
@@ -355,7 +355,7 @@ td.color_text{
     }
     .value{
         color: #291F03;
-        font-size: 18px !important;
+        font-size: 14px !important;
         font-weight: bolder;
     }
 }
@@ -374,4 +374,10 @@ td.color_text{
 
 .w-30{
     width:30%;
+}
+.tr{
+    color: #082339;
+}
+.nationalId{
+    color: #227386 !important;
 }

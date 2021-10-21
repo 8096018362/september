@@ -182,22 +182,36 @@ export class EmployerComponent {
                 bLengthChange: false,
                 bFilter: false,
                 columns: [
-                    { "data": "name" },
-                    { "data": "createdAt" },
-                    { "data": "nationalId" },
-                    { "data": "phoneNumber" },
-                    { "data": "total" },
                     {
-                        "className": 'action-btn',
-                        "orderable": false,
-                        "data": null,
-                        "defaultContent": ''
+                        data: "name"
                     },
                     {
-                        "className": 'details-control',
-                        "orderable": false,
-                        "data": null,
-                        "defaultContent": ''
+                        data: "createdAt"
+                    },
+                    {
+                        data: "nationalId",
+                        className: 'nationalId',
+                        // render: (data, type, full, meta) => {
+                        //     if (data != null) {
+                        //         return '<div>' + data + '</div>';
+                        //     } else {
+                        //         return '-';
+                        //     }
+                        // }
+                    },
+                    { data: "phoneNumber" },
+                    { data: "total" },
+                    {
+                        className: 'action-btn',
+                        orderable: false,
+                        data: null,
+                        defaultContent: ''
+                    },
+                    {
+                        className: 'details-control',
+                        orderable: false,
+                        data: null,
+                        defaultContent: ''
                     }
                 ],
                 "order": [[1, 'asc']]
