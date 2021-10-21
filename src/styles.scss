@@ -244,15 +244,15 @@ opacity: 100%;
 
 .newrow{
     // position: relative;
+  
+}
+
+.popoverdiv{
     position: absolute;
     background: #fff;
     right: 6vw;
     top: 6vw;
     width: 200px;
-}
-
-.popoverdiv{
-  
     h4{
         font-size: 15px;
         margin: 10px 15px;
@@ -289,6 +289,18 @@ opacity: 100%;
             p{
                 color:#646262;
                 font-size:12px;
+            }
+            .subcarddiv{
+                width: 50%;
+                float: left;
+                h6{
+                    color:#2C2727;
+                    font-size: 12px;
+                }
+                p{
+                    color:#646262;
+                    font-size:12px;
+                }
             }
             .finstatus_approv{
                 background: #6CC668;
@@ -394,3 +406,23 @@ td.color_text{
 .date{
     color: #082339 !important;
 } 
+
+.pwdreset{
+    background: #DDA715 !important;
+    width: max-content;
+    padding: 5px 15px;
+    color: #fff !important;
+    border-radius: 10px;
+}
+
+
+.iconDwnld{
+    display: flex;
+    p{
+        color: #316180;
+        font-size: 12px;
+        margin:  10px;
+    }
+}
+
+

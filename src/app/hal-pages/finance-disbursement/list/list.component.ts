@@ -17,147 +17,88 @@ export class ListComponent {
         function childRowTable() {
             var childData = [
                 {
-                    "id": "1",
-                    "name": "Tiger Nixon",
-                    "requestPending": "1",
-                    "requestApprove": "2",
-                    "requestAmount": "KES 2000",
-                    "approveAmount": "KES 2000"
-                }, {
-                    "id": "1",
-                    "name": "Tiger Nixon",
-                    "requestPending": "1",
-                    "requestApprove": "2",
-                    "requestAmount": "KES 2000",
-                    "approveAmount": "KES 2000"
-                }, {
-                    "id": "1",
-                    "name": "Tiger Nixon",
-                    "requestPending": "1",
-                    "requestApprove": "2",
-                    "requestAmount": "KES 2000",
-                    "approveAmount": "KES 2000"
-                }, {
-                    "id": "1",
-                    "name": "Tiger Nixon",
-                    "requestPending": "1",
-                    "requestApprove": "2",
-                    "requestAmount": "KES 2000",
-                    "approveAmount": "KES 2000"
-                }, {
-                    "id": "1",
-                    "name": "Tiger Nixon",
-                    "requestPending": "1",
-                    "requestApprove": "2",
-                    "requestAmount": "KES 2000",
-                    "approveAmount": "KES 2000"
-                }, {
-                    "id": "1",
-                    "name": "Tiger Nixon",
-                    "requestPending": "1",
-                    "requestApprove": "2",
-                    "requestAmount": "KES 2000",
-                    "approveAmount": "KES 2000"
-                }, {
-                    "id": "1",
-                    "name": "Tiger Nixon",
-                    "requestPending": "1",
-                    "requestApprove": "2",
-                    "requestAmount": "KES 2000",
-                    "approveAmount": "KES 2000"
-                }, {
-                    "id": "1",
-                    "name": "Tiger Nixon",
-                    "requestPending": "1",
-                    "requestApprove": "2",
-                    "requestAmount": "KES 2000",
-                    "approveAmount": "KES 2000"
-                }, {
-                    "id": "1",
-                    "name": "Tiger Nixon",
-                    "requestPending": "1",
-                    "requestApprove": "2",
-                    "requestAmount": "KES 2000",
-                    "approveAmount": "KES 2000"
-                }, {
-                    "id": "1",
-                    "name": "Tiger Nixon",
-                    "requestPending": "1",
-                    "requestApprove": "2",
-                    "requestAmount": "KES 2000",
-                    "approveAmount": "KES 2000"
-                }, {
-                    "id": "1",
-                    "name": "Tiger Nixon",
-                    "requestPending": "1",
-                    "requestApprove": "2",
-                    "requestAmount": "KES 2000",
-                    "approveAmount": "KES 2000"
-                }, {
-                    "id": "1",
-                    "name": "Tiger Nixon",
-                    "requestPending": "1",
-                    "requestApprove": "2",
-                    "requestAmount": "KES 2000",
-                    "approveAmount": "KES 2000"
-                }, {
-                    "id": "1",
-                    "name": "Tiger Nixon",
-                    "requestPending": "1",
-                    "requestApprove": "2",
-                    "requestAmount": "KES 2000",
-                    "approveAmount": "KES 2000"
-                }, {
-                    "id": "1",
-                    "name": "Tiger Nixon",
-                    "requestPending": "1",
-                    "requestApprove": "2",
-                    "requestAmount": "KES 2000",
-                    "approveAmount": "KES 2000"
-                }, {
-                    "id": "1",
-                    "name": "Tiger Nixon",
-                    "requestPending": "1",
-                    "requestApprove": "2",
-                    "requestAmount": "KES 2000",
-                    "approveAmount": "KES 2000"
-                }, {
-                    "id": "1",
-                    "name": "Tiger Nixon",
-                    "requestPending": "1",
-                    "requestApprove": "2",
-                    "requestAmount": "KES 2000",
-                    "approveAmount": "KES 2000"
-                }, {
-                    "id": "1",
-                    "name": "Tiger Nixon",
-                    "requestPending": "1",
-                    "requestApprove": "2",
-                    "requestAmount": "KES 2000",
-                    "approveAmount": "KES 2000"
-                }, {
-                    "id": "1",
-                    "name": "Tiger Nixon",
-                    "requestPending": "1",
-                    "requestApprove": "2",
-                    "requestAmount": "KES 2000",
-                    "approveAmount": "KES 2000"
-                }, {
-                    "id": "1",
-                    "name": "Tiger Nixon",
-                    "requestPending": "1",
-                    "requestApprove": "2",
-                    "requestAmount": "KES 2000",
-                    "approveAmount": "KES 2000"
-                }, {
-                    "id": "1",
-                    "name": "Tiger Nixon",
-                    "requestPending": "1",
-                    "requestApprove": "2",
-                    "requestAmount": "KES 2000",
-                    "approveAmount": "KES 2000"
+                    name: 'Faisal',
+                    createdAt: '11/11/2022',
+                    nationalId: 'KT0323455',
+                    phoneNumber: '+2541283621',
+                    total: 'KES 10,100'
                 },
-
+                {
+                    name: 'Yousef',
+                    createdAt: '11/11/2022',
+                    nationalId: 'KT0323455',
+                    phoneNumber: '+2541283621',
+                    total: 'KES 10,300'
+                },
+                {
+                    name: 'Faisal',
+                    createdAt: '11/11/2022',
+                    nationalId: 'KT0323455',
+                    phoneNumber: '+2541283621',
+                    total: 'KES 10,030'
+                },
+                {
+                    name: 'Faisal',
+                    createdAt: '11/11/2022',
+                    nationalId: 'KT0323455',
+                    phoneNumber: '+2541283621',
+                    total: 'KES 30,000'
+                },
+                {
+                    name: 'Faisal',
+                    createdAt: '11/11/2022',
+                    nationalId: 'KT0323455',
+                    phoneNumber: '+2541283621',
+                    total: 'KES 14,000'
+                },
+                {
+                    name: 'Yousef',
+                    createdAt: '11/11/2022',
+                    nationalId: 'KT0323455',
+                    phoneNumber: '+2541283621',
+                    total: 'KES 19,020'
+                }, {
+                    name: 'Faisal',
+                    createdAt: '11/11/2022',
+                    nationalId: 'KT0323455',
+                    phoneNumber: '+2541283621',
+                    total: 'KES 10,100'
+                },
+                {
+                    name: 'Yousef',
+                    createdAt: '11/11/2022',
+                    nationalId: 'KT0323455',
+                    phoneNumber: '+2541283621',
+                    total: 'KES 10,300'
+                },
+                {
+                    name: 'Faisal',
+                    createdAt: '11/11/2022',
+                    nationalId: 'KT0323455',
+                    phoneNumber: '+2541283621',
+                    total: 'KES 10,030'
+                },
+                {
+                    name: 'Faisal',
+                    createdAt: '11/11/2022',
+                    nationalId: 'KT0323455',
+                    phoneNumber: '+2541283621',
+                    total: 'KES 30,000'
+                },
+                {
+                    name: 'Faisal',
+                    createdAt: '11/11/2022',
+                    nationalId: 'KT0323455',
+                    phoneNumber: '+2541283621',
+                    total: 'KES 14,000'
+                },
+                {
+                    name: 'Yousef',
+                    createdAt: '11/11/2022',
+                    nationalId: 'KT0323455',
+                    phoneNumber: '+2541283621',
+                    total: 'KES 19,020'
+                }
             ];
 
 
@@ -190,7 +131,7 @@ export class ListComponent {
                     '</div>' +
                     ' <div class="carddiv">' +
                     '<h5>Mpesa Receipt</h5>' +
-                    '<p>67890</p>' +
+                    '<div class="iconDwnld"><img src="../../../../assets/images/pdf.svg"><p>MPS089975YZ67.pdf</p></div>' +
                     '</div>' +
                     '</div>' +
                     ' <div class="rowdiv">' +
@@ -202,6 +143,7 @@ export class ListComponent {
                     '</div>';
             }
 
+         
 
 
             var table = $('#chieldRow').DataTable({
@@ -209,24 +151,39 @@ export class ListComponent {
                 bLengthChange: false,
                 bFilter: false,
                 columns: [
-
-                    { "data": "name" },
-                    { "data": "requestPending" },
-                    { "data": "requestApprove" },
-                    { "data": "requestAmount" },
-                    { "data": "approveAmount" },
                     {
-                        "className": 'details-control',
-                        "orderable": false,
-                        "data": null,
-                        "defaultContent": ''
+                        data: "name",
+                        className: "name"
+                    },
+                    {
+                        data: "createdAt",
+                        className: "date"
+                    },
+                    {
+                        data: "nationalId",
+                        className: 'nationalId',
+                    },
+                    {
+                        data: "phoneNumber",
+                        className: 'phoneNumber'
+                    },
+                    {
+                        data: "total",
+                        className: "amount"
+                    },
+                   
+                    {
+                        className: 'details-control',
+                        orderable: false,
+                        data: null,
+                        defaultContent: ''
                     }
                 ],
                 "order": [[1, 'asc']]
             });
 
             // Add event listener for opening and closing details
-            $('#chieldRow tbody').on('click', 'td', function () {
+            $('#chieldRow tbody').on('click', 'td.details-control', function () {
                 var tr = $(this).closest('tr');
                 var row = table.row(tr);
 
@@ -242,6 +199,7 @@ export class ListComponent {
                 }
             });
 
+         
         }
     }
 }
