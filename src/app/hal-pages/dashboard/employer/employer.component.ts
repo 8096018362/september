@@ -107,57 +107,60 @@ export class EmployerComponent {
             /* Formatting function for row details - modify as you need */
             function format(d) {
                 // `d` is the original data object for the row
-                return '<div class="containerdiv">' +
-                    ' <div class="row">' +
-                    '<div class="col-md-12">' +
-                    '<h4>Finance Details</h4>' +
-                    '  </div>' +
-                    '  </div>' +
-                    ' <div class="rowdiv">' +
-                    ' <div class="carddiv">' +
-                    '<h5>Employee Name</h5>' +
-                    '<p>' + d.name + '</p>' +
-                    '</div>' +
-                    ' <div class="carddiv">' +
-                    '<h5>Finance ID</h5>' +
-                    '<p>' + d.approveAmount + '</p>' +
-                    '</div>' +
-                    ' <div class="carddiv">' +
-                    '<h5>National ID</h5>' +
-                    '<p>' + d.approveAmount + '</p>' +
-                    '</div>' +
-                    ' <div class="carddiv">' +
-                    '<h5>Phone Number</h5>' +
-                    '<p>' + d.approveAmount + '</p>' +
-                    '</div>' +
-                    ' <div class="carddiv">' +
-                    '<h5>Finance Amount Requested</h5>' +
-                    '<p>67890</p>' +
-                    '</div>' +
-                    '</div>' +
-                    ' <div class="rowdiv">' +
-                    ' <div class="carddiv">' +
-                    '<h5>Request Date</h5>' +
-                    '<p>22/06/2021</p>' +
-                    '</div>' +
-                    ' <div class="carddiv">' +
-                    '<h5>Approved Date</h5>' +
-                    '<p>22/06/2021</p>' +
-                    '</div>' +
-                    ' <div class="carddiv">' +
-                    '<h5>Finance Start Date</h5>' +
-                    '<p>22/06/2021</p>' +
-                    '</div>' +
-                    ' <div class="carddiv">' +
-                    '<h5>EMI Amount</h5>' +
-                    '<p>' + d.approveAmount + '</p>' +
-                    '</div>' +
-                    ' <div class="carddiv">' +
-                    '<h5>Status</h5>' +
-                    '<p class="finstatus_approv">Approved</p>' +
-                    '</div>' +
-                    '</div>' +
-                    '</div>';
+                return ` 
+                <div class="containerdiv">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <h4>Finance Details</h4>
+                        </div>
+                    </div>
+                    <div class="rowdiv">
+                        <div class="carddiv">
+                            <h5>Finance ID</h5>
+                            <p>${d.nationalId} </p>
+                        </div>
+                        <div class="carddiv">
+                            <h5>Request Date</h5>
+                            <p>22/06/2021</p>
+                        </div>
+                        <div class="carddiv">
+                            <h5>Approved Date</h5>
+                            <p>22/06/2021</p>
+                        </div>
+                        <div class="carddiv">
+                            <h5>Finance Start Date</h5>
+                            <p>22/06/2021</p>
+                        </div>
+                    </div>
+
+                    <div class="rowdiv">
+                        <div class="carddiv">
+                            <h5>Finance Amount Requested</h5>
+                            <p>67890</p>
+                        </div>
+                        <div class="carddiv">
+                            <h5>EMI Amount</h5>
+                            <p> ${d.total} </p>
+                        </div>
+                        <div class="carddiv">
+                            <h5>EMI Due Date</h5>
+                            <p>22/06/2021</p>
+                        </div>
+                        <div class="carddiv">
+                            <h5>Current EMI State</h5>
+                            <p>2/5</p>
+                        </div>
+                    </div>
+
+                    <div class="rowdiv">
+                        <div class="carddiv">
+                            <h5>Status</h5>
+                            <p class="finstatus_approv">Approved</p>
+                        </div>
+                    </div>
+                    
+                </div>
+                `;
             }
 
             function popover(d) {
@@ -257,6 +260,27 @@ export class EmployerComponent {
 
         }
     }
+    //     <div class="row">
+    //     <div class="col-sm-3 carddiv">
+    //         <h5>Finance ID</h5>
+    //         <p>${d.approveAmount} </p>
+    //     </div>
+    //     <div class="col-sm-3 carddiv">
+    //         <h5>National ID</h5>
+    //         <p> ${d.approveAmount}</p>
+    //     </div>
+    //     <div class="col-sm-3 carddiv">
+    //         <h5>Phone Number</h5>
+    //         <p> ${d.approveAmount} </p>
+    //     </div>
+    //     <div class="col-sm-3 carddiv">
+    //         <h5>Finance Amount Requested</h5>
+    //         <p>67890</p>
+    //     </div>
+    // </div>
+
+
+
     // private chart1() {
     //     var options = {
     //         chart: {
