@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup } from '@angular/forms';
+import { Router } from '@angular/router';
 import { ValidationMessages } from "src/app/common/validation-messages";
 import { ValidationPatterns } from "src/app/common/validation-patterns";
 
@@ -12,23 +13,24 @@ declare const jQuery: any;
     styleUrls: ['./signin.component.scss']
 })
 export class SigninComponent implements OnInit {
-    loginForm:FormGroup;
+    loginForm: FormGroup;
     validation_messages: any = {};
     pattens: any = {};
-    submitted:boolean=false;
+    submitted: boolean = false;
 
-    login(){
-        this.submitted = true;
+    login() {
+        this.router.navigate(['./hal/dashboard/employer'])
+        // this.submitted = true;
     }
-    constructor(public formBuilder: FormBuilder) { }
+    constructor(public formBuilder: FormBuilder, public router: Router) { }
 
     ngOnInit() {
         this.validation_messages = ValidationMessages;
         this.pattens = ValidationPatterns;
-    
+
         this.loginForm = this.formBuilder.group({
-            email:['', this.pattens.required],
-            password:['', this.pattens.required]
+            email: ['', this.pattens.required],
+            password: ['', this.pattens.required]
         })
 
         // (function ($) {
