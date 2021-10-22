@@ -56,104 +56,196 @@
 
                                 <div class="col-sm-6 m-b-5">
                                     <div class="customInput">
-                                        <label>Phone Number</label>
-                                        <input type="text" formControlName="nationalId" placeholder="Phone Number" />
+                                        <label>Finance ID</label>
+                                        <input type="text" formControlName="financeId" placeholder="Finance ID" />
+                                    </div>
+                                    <div class="validation-errors">
+                                        <ng-container *ngFor="let validation of validation_messages.financeId">
+                                            <div class="error-message"
+                                                *ngIf="employeeForm.get('financeId').hasError(validation.type) && (employeeForm.get('financeId').dirty || employeeForm.get('financeId').touched)">
+                                                {{ validation.message }}
+                                            </div>
+                                        </ng-container>
                                     </div>
                                 </div>
 
                                 <div class="col-sm-6 m-b-5">
                                     <div class="customInput">
-                                        <label>National ID Copy</label>
-                                        <input type="text" formControlName="nationalId"
-                                            placeholder="National ID Copy" />
+                                        <label>Phone No</label>
+                                        <input type="text" formControlName="phoneNumber" placeholder="Phone No" />
+                                    </div>
+                                    <div class="validation-errors">
+                                        <ng-container *ngFor="let validation of validation_messages.phoneNumber">
+                                            <div class="error-message"
+                                                *ngIf="employeeForm.get('phoneNumber').hasError(validation.type) && (employeeForm.get('phoneNumber').dirty || employeeForm.get('phoneNumber').touched)">
+                                                {{ validation.message }}
+                                            </div>
+                                        </ng-container>
+                                    </div>
+                                </div>
+
+                                <div class="col-sm-6 m-b-5">
+                                    <div class="customInput">
+                                        <label>Total Finance Amount</label>
+                                        <input type="text" formControlName="total_finance_amount"
+                                            placeholder="Total Finance Amount" />
+                                    </div>
+                                    <div class="validation-errors">
+                                        <ng-container *ngFor="let validation of validation_messages.total_finance_amount">
+                                            <div class="error-message"
+                                                *ngIf="employeeForm.get('total_finance_amount').hasError(validation.type) && (employeeForm.get('total_finance_amount').dirty || employeeForm.get('total_finance_amount').touched)">
+                                                {{ validation.message }}
+                                            </div>
+                                        </ng-container>
                                     </div>
                                 </div>
                                 <div class="col-sm-6 m-b-5">
                                     <div class="customInput">
-                                        <label>Age</label>
-                                        <input type="text" formControlName="nationalId" placeholder="Age" />
+                                        <label>Request Date</label>
+                                        <input type="date" formControlName="request_date" placeholder="Request Date" />
+                                    </div>
+                                    <div class="validation-errors">
+                                        <ng-container *ngFor="let validation of validation_messages.request_date">
+                                            <div class="error-message"
+                                                *ngIf="employeeForm.get('request_date').hasError(validation.type) && (employeeForm.get('request_date').dirty || employeeForm.get('request_date').touched)">
+                                                {{ validation.message }}
+                                            </div>
+                                        </ng-container>
                                     </div>
                                 </div>
+
                                 <div class="col-sm-6 m-b-5">
                                     <div class="customInput">
-                                        <label>Salary</label>
-                                        <select class="browser-default" formControlName="nationalId">
-                                            <option value="" disabled selected>Choose Salary</option>
-                                            <option value="1">Option 1</option>
-                                            <option value="2">Option 2</option>
-                                            <option value="3">Option 3</option>
-                                        </select>
+                                        <label>Approved Date</label>
+                                        <input type="date" formControlName="approved_date" placeholder="Approved Date" />
+                                    </div>
+                                    <div class="validation-errors">
+                                        <ng-container *ngFor="let validation of validation_messages.approved_date">
+                                            <div class="error-message"
+                                                *ngIf="employeeForm.get('approved_date').hasError(validation.type) && (employeeForm.get('approved_date').dirty || employeeForm.get('approved_date').touched)">
+                                                {{ validation.message }}
+                                            </div>
+                                        </ng-container>
                                     </div>
                                 </div>
+
                                 <div class="col-sm-6 m-b-5">
                                     <div class="customInput">
-                                        <label>Duration of Employment</label>
-                                        <input type="text" formControlName="nationalId"
-                                            placeholder="Approved Fund Per Employee" />
+                                        <label>Finance Start Date</label>
+                                        <input type="date" formControlName="finance_start_date" placeholder="Finance Start Date" />
+                                    </div>
+                                    <div class="validation-errors">
+                                        <ng-container *ngFor="let validation of validation_messages.finance_start_date">
+                                            <div class="error-message"
+                                                *ngIf="employeeForm.get('finance_start_date').hasError(validation.type) && (employeeForm.get('finance_start_date').dirty || employeeForm.get('finance_start_date').touched)">
+                                                {{ validation.message }}
+                                            </div>
+                                        </ng-container>
                                     </div>
                                 </div>
+
+                                <div class="col-sm-6 m-b-5">
+                                    <div class="customInput">
+                                        <label>Finance Due Date</label>
+                                        <input type="date" formControlName="finance_due_date" placeholder="Finance Due Date" />
+                                    </div>
+                                    <div class="validation-errors">
+                                        <ng-container *ngFor="let validation of validation_messages.finance_due_date">
+                                            <div class="error-message"
+                                                *ngIf="employeeForm.get('finance_due_date').hasError(validation.type) && (employeeForm.get('finance_due_date').dirty || employeeForm.get('finance_due_date').touched)">
+                                                {{ validation.message }}
+                                            </div>
+                                        </ng-container>
+                                    </div>
+                                </div>
+
+                              
+                                <div class="col-sm-6 m-b-5">
+                                    <div class="customInput">
+                                        <label>EMI Amount</label>
+                                        <input type="text" formControlName="emi_amount"
+                                            placeholder="EMI Amount" />
+                                    </div>
+                                    <div class="validation-errors">
+                                        <ng-container *ngFor="let validation of validation_messages.emi_amount">
+                                            <div class="error-message"
+                                                *ngIf="employeeForm.get('emi_amount').hasError(validation.type) && (employeeForm.get('emi_amount').dirty || employeeForm.get('emi_amount').touched)">
+                                                {{ validation.message }}
+                                            </div>
+                                        </ng-container>
+                                    </div>
+                                </div>
+
+                                <div class="col-sm-6 m-b-5">
+                                    <div class="customInput">
+                                        <label>EMI Due Date</label>
+                                        <input type="date" formControlName="emi_due_date" placeholder="EMI Due Date" />
+                                    </div>
+                                    <div class="validation-errors">
+                                        <ng-container *ngFor="let validation of validation_messages.emi_due_date">
+                                            <div class="error-message"
+                                                *ngIf="employeeForm.get('emi_due_date').hasError(validation.type) && (employeeForm.get('emi_due_date').dirty || employeeForm.get('emi_due_date').touched)">
+                                                {{ validation.message }}
+                                            </div>
+                                        </ng-container>
+                                    </div>
+                                </div>
+
+                                <div class="col-sm-6 m-b-5">
+                                    <div class="customInput">
+                                        <label>Current EMI State</label>
+                                        <input type="text" formControlName="emi_state"
+                                            placeholder="Current EMI State" />
+                                    </div>
+                                    <div class="validation-errors">
+                                        <ng-container *ngFor="let validation of validation_messages.emi_state">
+                                            <div class="error-message"
+                                                *ngIf="employeeForm.get('emi_state').hasError(validation.type) && (employeeForm.get('emi_state').dirty || employeeForm.get('emi_state').touched)">
+                                                {{ validation.message }}
+                                            </div>
+                                        </ng-container>
+                                    </div>
+                                </div>
+
                                 <div class="col-sm-6 m-b-5">
                                     <div class="customInput">
                                         <label>Status</label>
-                                        <select class="browser-default" formControlName="nationalId">
+                                        <select class="browser-default" formControlName="status">
                                             <option value="" disabled selected>Country</option>
                                             <option value="1">Option 1</option>
                                             <option value="2">Option 2</option>
                                             <option value="3">Option 3</option>
                                         </select>
                                     </div>
-                                </div>
-                                <div class="col-sm-6 m-b-5">
-                                    <div class="customInput">
-                                        <label>Finances Taken</label>
-                                        <input type="text" formControlName="nationalId" placeholder="Finances Taken" />
+                                    <div class="validation-errors">
+                                        <ng-container *ngFor="let validation of validation_messages.status">
+                                            <div class="error-message"
+                                                *ngIf="employeeForm.get('status').hasError(validation.type) && (employeeForm.get('status').dirty || employeeForm.get('status').touched)">
+                                                {{ validation.message }}
+                                            </div>
+                                        </ng-container>
                                     </div>
                                 </div>
-                                <div class="col-sm-6 m-b-5">
-                                    <div class="customInput">
-                                        <label>Finances Repaid</label>
-                                        <input type="text" formControlName="nationalId" placeholder="Finances Repaid" />
-                                    </div>
-                                </div>
+                               
+                             
                             </div>
                             <hr>
                         </div>
-                        <div class="header">
-                            <h2 class="form-sub-header">
-                                Finances Repaid
-                            </h2>
-                        </div>
-                        <div class="body">
-                            <div class="row">
-                                <div class="col-sm-6 m-b-5">
-                                    <div class="customInput">
-                                        <label>Appointment Letter</label>
-                                        <input type="text" formControlName="nationalId"
-                                            placeholder="Appointment Letter" />
-                                    </div>
-                                </div>
-                                <div class="col-sm-6 m-b-5">
-                                    <div class="customInput">
-                                        <label>Payslip</label>
-                                        <input type="text" formControlName="nationalId" placeholder="Payslip" />
-                                    </div>
-                                </div>
-
-                            </div>
-                        </div>
+                      
+                      
                         <div class="body">
 
-                            <div class="row m-b-20 submit-btns">
-                                <div class="col-sm-2">
+                            <div class="m-b-20 submit-btns">
+                                <div class="">
                                     <div class="cus-btn2 color4"
-                                    data-toggle="modal" data-target="#basicModal">Reject</div>
+                                   (click)="save()">Save</div>
                                     <div class="modal fade" id="basicModal" tabindex="-1" role="dialog"
                                     aria-labelledby="exampleModalLabel" aria-hidden="true">
                                     <div class="modal-dialog" role="document">
                                         <div class="modal-content">
                                             <img src="assets/images/popup/save-now.svg" />
                                             <div class="headerText" >
-                                                <div class="titleDiv" >Reject Now!</div>
+                                                <div class="titleDiv" >Save Now!</div>
                                                 <div>
                                                     <span  > &nbsp; &nbsp;
                                                         &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
@@ -162,29 +254,29 @@
                                                 </div>
                                             </div>
                                             <div class="modal-body" >
-                                                <p > Are you sure you want to
-                                                    Reject this new Employee?</p>
+                                                <p > Are you sure you want to save this data?</p>
                                             </div>
                                             <div class="modal-footer" style="text-align:center">
-                                                <button type="button"
-                                                    class="btn btn-info waves-effect savebtn">Reject</button>
                                                 <button type="button" class="btn btn-danger waves-effect cancelbtn"
-                                                    data-dismiss="modal">Cancel</button>
+                                                data-dismiss="modal">Cancel</button>
+                                                <button type="button"
+                                                    class="btn btn-info waves-effect savebtn">Save</button>
+                                               
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                                 </div>
-                                <div class="col-sm-2">
-                                    <div class="cus-btn2 color5"
-                                    data-toggle="modal" data-target="#sendApproval">Approve</div>
+                                <div class="">
+                                    <div class="cus-btn2 color2"
+                                    data-toggle="modal" data-target="#sendApproval">Send for Approval</div>
                                     <div class="modal fade" id="sendApproval" tabindex="-1" role="dialog"
                                     aria-labelledby="exampleModalLabel" aria-hidden="true">
                                     <div class="modal-dialog" role="document">
                                         <div class="modal-content">
                                             <img src="assets/images/popup/save-now.svg" />
                                             <div class="headerText" >
-                                                <div class="titleDiv" >Approve Now!</div>
+                                                <div class="titleDiv" >Send for Approval!</div>
                                                 <div>
                                                     <span  > &nbsp; &nbsp;
                                                         &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
@@ -194,11 +286,16 @@
                                             </div>
                                          
                                             <div class="modal-body">
-                                               <p>Are you sure you want to Approve this new Employee?</p> 
+                                               <p>Are you sure you want to send this for approval?</p> 
+                                               <div class="customInput">
+                                                <label>Comments</label>
+                                                <textarea class="form-control" type="text" rows="3"
+                                                    placeholder="Enter Comments"></textarea>
+                                            </div>
                                             </div>
                                             <div class="modal-footer" style="text-align:center">
                                                 <button type="button"
-                                                    class="btn btn-info waves-effect savebtn">Approve</button>
+                                                    class="btn btn-info waves-effect savebtn">Submit</button>
                                                 <button type="button" class="btn btn-danger waves-effect cancelbtn"
                                                     data-dismiss="modal">Cancel</button>
                                             </div>
@@ -207,7 +304,7 @@
                                     </div>
                                 </div>
                                 </div>
-                                <div class="col-sm-2">
+                                <div class="">
                                     <div class="cus-btn2 color3"
                                     data-toggle="modal" data-target="#cancelModal">Cancel</div>
                                     <div class="modal fade" id="cancelModal" tabindex="-1" role="dialog"
@@ -229,10 +326,11 @@
                                                <p>Are you sure you want to cancel this?</p> 
                                             </div>
                                             <div class="modal-footer" style="text-align:center">
-                                                <button type="button"
-                                                    class="btn btn-info waves-effect savebtn">Yes</button>
+                                               
                                                 <button type="button" class="btn btn-danger waves-effect cancelbtn"
-                                                    data-dismiss="modal">No</button>
+                                                    data-dismiss="modal">Cancel</button>
+                                                    <button type="button"
+                                                    class="btn btn-info waves-effect savebtn">Save</button>
                                             </div>
                                         </div>
                                     </div>

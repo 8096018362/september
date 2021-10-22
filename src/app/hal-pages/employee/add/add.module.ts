@@ -3,6 +3,7 @@ import { AddComponent } from './add.component';
 import { Routes, RouterModule } from '@angular/router';
 import { CommonModule } from "@angular/common";
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+// import { MatSnackBarModule } from '@angular/material/snack-bar';
 
 const routes: Routes = [
     {
@@ -17,7 +18,8 @@ const routes: Routes = [
         CommonModule,
         FormsModule,
         ReactiveFormsModule.withConfig({ warnOnNgModelWithFormControl: 'never' }),
-        RouterModule.forChild(routes)
+        RouterModule.forChild(routes),
+        // MatSnackBarModule
     ],
     declarations: [AddComponent]
 })

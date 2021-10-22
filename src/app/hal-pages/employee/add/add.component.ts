@@ -2,6 +2,9 @@ import { Component } from "@angular/core";
 import { FormBuilder, FormGroup } from "@angular/forms";
 import { ValidationMessages } from "src/app/common/validation-messages";
 import { ValidationPatterns } from "src/app/common/validation-patterns";
+// import {MatSnackBar } from '@angular/material/snack-bar';
+
+declare var $:any;
 
 @Component({
     selector: '',
@@ -16,7 +19,8 @@ export class AddComponent {
     pattens: any = {};
 
     constructor(
-        public formBuilder: FormBuilder
+        public formBuilder: FormBuilder,
+        // public matsnackbar:MatSnackBar
     ) {
         this.validation_messages = ValidationMessages;
         this.pattens = ValidationPatterns;
@@ -25,22 +29,35 @@ export class AddComponent {
         this.employeeForm = this.formBuilder.group({
             nameOfEmployee: [null, this.pattens.required],
             nationalId: [null, this.pattens.required],
+            financeId: [null, this.pattens.required],
             phoneNumber: [null, this.pattens.required],
-            nationalIdCopy: [null, this.pattens.required],
-            age: [null, this.pattens.required],
-            salary: [null, this.pattens.required],
-            durationOfEmployement: [null, this.pattens.required],
-            status: [null, this.pattens.required],
-            financesTaken: [null, this.pattens.required],
-            financesRepaid: [null, this.pattens.required],
-            appointmentLetter: [null, this.pattens.required],
-            paySlip: [null, this.pattens.required]
+            total_finance_amount: [null, this.pattens.required],
+            request_date: [null, this.pattens.required],
+            approved_date: [null, this.pattens.required],
+            finance_start_date: [null, this.pattens.required],
+            finance_due_date: [null, this.pattens.required],
+            emi_amount: [null, this.pattens.required],
+            emi_due_date: [null, this.pattens.required],
+            emi_state: [null, this.pattens.required],
+            status: [null, this.pattens.required]
         });
 
     }
 
     doSubmit() {
         console.log(this.employeeForm.value)
+    }
+
+    save(){
+        if(this.employeeForm.valid){
+            $('#basicModal').modal('show')
+        }else{
+            // this.matsnackbar.open('Please fill Valid Data', 'OK',{
+            //     verticalPosition: 'top',
+            //     duration: 2000,
+            //     panelClass:'snack-error'
+            // })
+        }
     }
 
 }
