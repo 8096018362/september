@@ -5,16 +5,131 @@
         <div class="menu">
             <ul class="list">
                 <li routerLinkActive="active">
-                    <!-- <a [routerLink]="loginType=='admin'?'hal/dashboard/admin':'hal/dashboard/operator'">
-                        <img src="./assets/images/sidemenu/dashboard.svg" width="10%">
-                        <span>Dashboard</span>
-                    </a> -->
-
                     <a routerLink="hal/dashboard/employer">
                         <img src="./assets/images/sidemenu/dashboard.svg" width="10%">
                         <span>Dashboard</span>
                     </a>
                 </li>
+
+
+                <li routerLinkActive="active">
+                    <a routerLink="hal/employee/list">
+                        <img src="./assets/images/sidemenu/employee-mng.svg" width="10%">
+                        <span>Employee Management</span>
+                    </a>
+                </li>
+
+                <li routerLinkActive="active">
+                    <a routerLink="hal/finance-origination/list">
+                        <img src="./assets/images/sidemenu/finance-org.svg" width="10%">
+                        <span>Finance Origination</span>
+                    </a>
+                </li>
+
+                <li routerLinkActive="active">
+                    <a routerLink="hal/finance-disbursement/list">
+                        <img src="./assets/images/sidemenu/finance-dirbs.svg" width="10%">
+                        <span>Finance Disbursement</span>
+                    </a>
+                </li>
+
+
+                <li routerLinkActive="active">
+                    <a routerLink="hal/finance-collection/list">
+                        <img src="./assets/images/sidemenu/finance-colls.svg" width="10%">
+                        <span>Finance Collection</span>
+                    </a>
+                </li>
+
+                <li routerLinkActive="active">
+                    <a routerLink="hal/notifications/list">
+                        <img src="./assets/images/sidemenu/notification.svg" width="10%">
+                        <span>Notifications</span>
+                    </a>
+                </li>
+
+                <!-- 
+                    ***
+                        Admin & Operator  Screens
+                    ***
+                -->
+
+                <hr>
+                <li routerLinkActive="active">
+                    <a>
+                        <span style="font-size: 20px !important;">Admin Section...</span>
+                    </a>
+                </li>
+                <hr>
+                <li routerLinkActive="active">
+                    <a [routerLink]="loginType=='admin'?'hal/dashboard/admin':'hal/dashboard/operator'">
+                        <img src="./assets/images/sidemenu/dashboard.svg" width="10%">
+                        <span>Dashboard</span>
+                    </a>
+                </li>
+                <li routerLinkActive="active">
+                    <a routerLink="hal/employer/list">
+                        <img src="./assets/images/sidemenu/emp-mng.svg" width="10%">
+                        <span>Employer Management</span>
+                    </a>
+                </li>
+
+                <li routerLinkActive="active">
+                    <a routerLink="hal/product/list">
+                        <img src="./assets/images/sidemenu/prod-mng.svg" width="10%">
+                        <span>Product Management</span>
+                    </a>
+                </li>
+
+                <li routerLinkActive="active">
+                    <a routerLink="hal/employee/list">
+                        <img src="./assets/images/sidemenu/employee-mng.svg" width="10%">
+                        <span>Employee Management</span>
+                    </a>
+                </li>
+
+                <li routerLinkActive="active">
+                    <a routerLink="hal/finance-origination/list">
+                        <img src="./assets/images/sidemenu/finance-org.svg" width="10%">
+                        <span>Finance Origination</span>
+                    </a>
+                </li>
+
+                <li routerLinkActive="active">
+                    <a routerLink="hal/finance-disbursement/list">
+                        <img src="./assets/images/sidemenu/finance-dirbs.svg" width="10%">
+                        <span>Finance Disbursement</span>
+                    </a>
+                </li>
+
+
+                <li routerLinkActive="active">
+                    <a routerLink="hal/finance-collection/list">
+                        <img src="./assets/images/sidemenu/finance-colls.svg" width="10%">
+                        <span>Finance Collection</span>
+                    </a>
+                </li>
+
+                <li routerLinkActive="active">
+                    <a routerLink="hal/cs/list">
+                        <img src="./assets/images/sidemenu/cre-src-mng.svg" width="10%">
+                        <span>CS Management</span>
+                    </a>
+                </li>
+                <li routerLinkActive="active">
+                    <a routerLink="hal/cm/list">
+                        <img src="./assets/images/sidemenu/commodity-mutarbah.svg" width="10%">
+                        <span>CM Management</span>
+                    </a>
+                </li>
+                <li routerLinkActive="active">
+                    <a routerLink="hal/notifications/list">
+                        <img src="./assets/images/sidemenu/notification.svg" width="10%">
+                        <span>Notifications</span>
+                    </a>
+                </li>
+
+
 
                 <!-- <li routerLinkActive="active">
                     <a href="#" onClick="return false;" class="menu-toggle">
@@ -109,71 +224,7 @@
                     </ul>
                 </li> -->
 
-                <!-- <li routerLinkActive="active">
-                    <a routerLink="hal/employer/list">
-                        <img src="./assets/images/sidemenu/emp-mng.svg" width="10%">
-                        <span>Employer Management</span>
-                    </a>
-                </li>
-
-                <li routerLinkActive="active">
-                    <a routerLink="hal/product/list">
-                        <img src="./assets/images/sidemenu/prod-mng.svg" width="10%">
-                        <span>Product Management</span>
-                    </a>
-                </li> -->
-
-                <li routerLinkActive="active">
-                    <a routerLink="hal/employee/list">
-                        <img src="./assets/images/sidemenu/employee-mng.svg" width="10%">
-                        <span>Employee Management</span>
-                    </a>
-                </li>
-
-                <li routerLinkActive="active">
-                    <a routerLink="hal/finance-origination/list">
-                        <img src="./assets/images/sidemenu/finance-org.svg" width="10%">
-                        <span>Finance Origination</span>
-                    </a>
-                </li>
-
-                <li routerLinkActive="active">
-                    <a routerLink="hal/finance-disbursement/list">
-                        <img src="./assets/images/sidemenu/finance-dirbs.svg" width="10%">
-                        <span>Finance Disbursement</span>
-                    </a>
-                </li>
-
-
-                <li routerLinkActive="active">
-                    <a routerLink="hal/finance-collection/list">
-                        <img src="./assets/images/sidemenu/finance-colls.svg" width="10%">
-                        <span>Finance Collection</span>
-                    </a>
-                </li>
-
-                <!-- <li routerLinkActive="active">
-                    <a routerLink="hal/cs/list">
-                        <img src="./assets/images/sidemenu/cre-src-mng.svg" width="10%">
-                        <span>CS Management</span>
-                    </a>
-                </li>
-                <li routerLinkActive="active">
-                    <a routerLink="hal/cm/list">
-                        <img src="./assets/images/sidemenu/commodity-mutarbah.svg" width="10%">
-                        <span>CM Management</span>
-                    </a>
-                </li> -->
-
-                <li routerLinkActive="active">
-                    <a routerLink="hal/notifications/list">
-                        <img src="./assets/images/sidemenu/notification.svg" width="10%">
-                        <span>Notifications</span>
-                    </a>
-                </li>
-
-
-
+                <!---->
 
                 <!-- <li routerLinkActive="active">
                     <a href="#" onClick="return false;" class="menu-toggle">
