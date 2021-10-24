@@ -131,7 +131,7 @@ export class ListComponent {
                     '</div>' +
                     ' <div class="carddiv">' +
                     '<h5>Mpesa Receipt</h5>' +
-                    '<div class="iconDwnld"><img src="../../../../assets/images/pdf.svg"><a>MPS089975YZ67.pdf</a></div>' +
+                    '<div class="iconDwnld"><img src="../../../../assets/images/pdf.svg"><a href="../../../../assets/images/sample.pdf" target="_blank">MPS089975YZ67.pdf</a></div>' +
                     '</div>' +
                     '</div>' +
                     ' <div class="rowdiv">' +

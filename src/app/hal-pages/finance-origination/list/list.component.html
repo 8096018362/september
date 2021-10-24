@@ -76,6 +76,65 @@
                             </table>
     
                         </div>
+                        <div class="modal fade" id="approveModal" tabindex="-1" role="dialog"
+                        aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog" role="document">
+                            <div class="modal-content">
+                                <img src="assets/images/popup/send-for-approval.svg" />
+                                <div class="headerText">
+                                    <div class="titleDiv">Approve Now!</div>
+                                    <div>
+                                        <span> &nbsp; &nbsp;
+                                            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                                            &nbsp; &nbsp; &nbsp; &nbsp;
+                                        </span>
+                                    </div>
+                                </div>
+
+                                <div class="modal-body">
+                                    <p>Are you sure you want to send this for approval?</p>
+                                </div>
+                                <div class="modal-footer" style="text-align:center">
+                                    <button type="button" class="btn btn-danger waves-effect cancelbtn"
+                                        data-dismiss="modal">Cancel</button>
+                                    <button type="button" class="btn btn-info waves-effect savebtn">Approve</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="modal fade" id="rejectModal" tabindex="-1" role="dialog"
+                        aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog" role="document">
+                            <div class="modal-content">
+                                <img src="assets/images/popup/reject.svg" />
+                                <div class="headerText">
+                                    <div class="titleDiv">Reject Now!</div>
+                                    <div>
+                                        <span> &nbsp; &nbsp;
+                                            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                                            &nbsp; &nbsp; &nbsp; &nbsp;
+                                        </span>
+                                    </div>
+                                </div>
+
+                                <div class="modal-body">
+                                    <p>Are you sure you want to reject this?</p>
+                                    <div class="customInput">
+                                        <label>Comments (Optional)</label>
+                                        <textarea class="form-control" type="text" rows="3"
+                                            placeholder="Enter Comments"></textarea>
+                                    </div>
+                                </div>
+                                <div class="modal-footer" style="text-align:center">
+
+                                    <button type="button" class="btn btn-danger waves-effect cancelbtn"
+                                        data-dismiss="modal">Cancel</button>
+                                    <button type="button" class="btn btn-info waves-effect savebtn">Submit</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                     </div>
                 </div>
             </div>
