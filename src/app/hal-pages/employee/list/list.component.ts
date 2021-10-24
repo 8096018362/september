@@ -185,7 +185,7 @@ export class ListComponent {
           '  </div>' +
           '<div class="col-md-12">' +
           // '<img src="../../../../assets/images/user-setting.svg">'+
-          '<h4 ><a>Download Employee List</a></h4>' +
+          '<h4 ><a href="#/hal/employee/download">Download Employee List</a></h4>' +
           '  </div>' +
           '  </div>' +
           '</div>';

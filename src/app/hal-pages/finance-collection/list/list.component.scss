@@ -1,0 +1,101 @@
+.table thead tr th{
+    color: #A7A4A4 !important;
+    font-size: 12px;
+    font-weight: bolder;
+}
+
+
+.savebtn{
+    background: #4050B5 !important ;
+    border: 1px solid #4050B5 !important;
+
+}
+
+.cancelbtn{
+    background: #9E9E9E !important;
+    color: #fff !important;
+    border: 1px solid #9E9E9E !important;
+}
+
+.modal-content{
+    border-radius: 25px;
+    width: 60%;
+    margin: auto;
+    .modal-body{
+        text-align: center;
+        p{
+            font-size:18px;color: #1C1E1F;
+        }
+        label{
+            float: left !important;
+        }
+        textarea{
+            border-radius: 5px;
+        }
+        .input-group-addon {
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 1;
+            color: #555;
+            text-align: center;
+            background-color: #03A89E;
+            border: 1px solid #03A89E;
+            width: 16%;
+            white-space: nowrap;
+            vertical-align: middle;
+            display: table-cell;
+            .uplodicon{
+                width: 70% !important;
+                margin: 0 !important;
+            }
+        }
+        
+        input {
+            position: relative;
+            z-index: 2;
+            float: left;
+            width: 88%;
+            margin-bottom: 0;
+            display: table-cell;
+            padding: 1px 12px;
+            border: 1px solid #ccc;
+            margin: 0;
+        }
+        
+        .suffix input {
+            border-radius: 4px 0px 0px 4px;
+        }
+        .suffix .input-group-addon {
+            border-left: 0;
+            border-radius: 0px 4px 4px 0px;
+        }
+        .input-group-addon.suffix {
+            border-radius: 0px 4px 4px 0px;
+            border-left: 0;
+        }
+        .input-group {
+            position: relative;
+            display: table;
+            border-collapse: separate;
+        }
+    }
+    img{
+        width: 25%;margin: auto;margin-top: -30px;
+    }
+    .headerText{
+        margin-top: 25px;text-align: center;
+        .titleDiv{
+            color: #082339;font-size: 20px;font-weight: 600;
+        }
+        span{
+            border-bottom:2px dashed #6E6E6E;
+        }
+    }
+}
+
+.modal .modal-footer .btn{
+margin: 10px;
+padding: 0px 20px;
+font-size: 12px !important;
+border-radius: 4px;
+}

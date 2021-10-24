@@ -169,15 +169,15 @@ export class ListComponent {
               ' <div class="row">' +
               '<div class="col-md-12">' +
               // '<img src="../../../../assets/images/user-setting.svg">'+
-              '<h4 ><a href="#/hal/employee/add">Add Employee</a></h4>' +
+              '<h4 ><a href="#/hal/finance-collection/add-repayment">Add Repayment</a></h4>' +
               '  </div>' +
               '<div class="col-md-12">' +
               // '<img src="../../../../assets/images/user-setting.svg">'+
-              '<h4 ><a href="#/hal/employee/upload">Upload Employee List</a></h4>' +
+              '<h4 ><a href="#/hal/employee/upload">Download Repayment </a></h4>' +
               '  </div>' +
               '<div class="col-md-12">' +
               // '<img src="../../../../assets/images/user-setting.svg">'+
-              '<h4 ><a>Download Employee List</a></h4>' +
+              '<h4 data-toggle="modal" data-target="#uploadModal" ><a>Upload Repayment </a></h4>' +
               '  </div>' +
               '  </div>' +
               '</div>';
@@ -197,7 +197,12 @@ export class ListComponent {
               },
               { data: "requestAmount" },
               { data: "approveAmount" },
-            
+              {
+                className: 'action-btn',
+                orderable: false,
+                data: null,
+                "defaultContent": ''
+              },
               {
                 "className": 'details-control',
                 "orderable": false,

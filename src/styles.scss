@@ -491,9 +491,18 @@
       display: flex;
 
       p {
-          color: #316180;
+          color: #0A68FF !important;
           font-size: 12px;
           margin: 10px;
+          cursor: pointer;
+      }
+
+      a{
+        color: #316180 !important;
+        font-size: 12px;
+        margin: 10px;
+        cursor: pointer;
+        text-decoration: none;
       }
   }
 

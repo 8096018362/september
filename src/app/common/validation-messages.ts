@@ -46,5 +46,9 @@ export const ValidationMessages = {
     request_date: [ { type: 'required', message: 'Request Date is required' }],
     total_finance_amount: [ { type: 'required', message: 'Total Finance Amount is required' }],
     phoneNumber: [ { type: 'required', message: 'Phone Number is required' }],
+    repayment_due_date:[ { type: 'required', message: 'Repayment Due Date is required' }],
+    amount_outstanding:[ { type: 'required', message: 'Amount Outstanding is required' }],
+    emi_serial_number:[ { type: 'required', message: 'EMI Serial Number is required' }],
+    repayment_id:[ { type: 'required', message: 'Repayment ID is required' }],
 
 };

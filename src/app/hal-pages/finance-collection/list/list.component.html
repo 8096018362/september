@@ -165,19 +165,21 @@
                                     <th>Phone No.</th>
                                     <th>Total Finance Amount</th>
                                     <th></th>
+                                    <th></th>
+
                                 </tr>
                             </thead>
                         </table>
 
                     </div>
 
-                    <div class="modal fade" id="approveModal" tabindex="-1" role="dialog"
+                    <div class="modal fade" id="uploadModal" tabindex="-1" role="dialog"
                         aria-labelledby="exampleModalLabel" aria-hidden="true">
                         <div class="modal-dialog" role="document">
                             <div class="modal-content">
                                 <img src="assets/images/popup/save-now.svg" />
                                 <div class="headerText">
-                                    <div class="titleDiv">Approve Now!</div>
+                                    <div class="titleDiv">Upload Repayment</div>
                                     <div>
                                         <span> &nbsp; &nbsp;
                                             &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
@@ -187,10 +189,25 @@
                                 </div>
 
                                 <div class="modal-body">
-                                    <p>Are you sure you want to send this for approval?</p>
+                                    <p>Please Upload here Repayment</p>
+                                    <!-- <div class="customInput">
+                                        <label for="formFile" class="form-label">Upload Repayment File</label>
+                                        <input class="form-control" type="file" id="formFile">
+                                    </div> -->
+
+                                    <div class="row">
+                                        <label  class="form-label">Upload Repayment File</label>
+                                        <div class="input-group suffix">                           
+                                           <input placeholder="Please Upload here" type="text" name="input">
+                                          <span class="input-group-addon ">
+                                              <img class="uplodicon" src="../../../../assets/images/upload.svg">
+                                          </span>
+                                        </div>                   
+                                      </div>
+
                                 </div>
                                 <div class="modal-footer" style="text-align:center">
-                                    <button type="button" class="btn btn-info waves-effect savebtn">Approve</button>
+                                    <button type="button" class="btn btn-info waves-effect savebtn">Submit</button>
                                     <button type="button" class="btn btn-danger waves-effect cancelbtn"
                                         data-dismiss="modal">Cancel</button>
                                 </div>
@@ -198,36 +215,7 @@
                         </div>
                     </div>
 
-                    <div class="modal fade" id="rejectModal" tabindex="-1" role="dialog"
-                        aria-labelledby="exampleModalLabel" aria-hidden="true">
-                        <div class="modal-dialog" role="document">
-                            <div class="modal-content">
-                                <img src="assets/images/popup/save-now.svg" />
-                                <div class="headerText">
-                                    <div class="titleDiv">Reject Now!</div>
-                                    <div>
-                                        <span> &nbsp; &nbsp;
-                                            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-                                            &nbsp; &nbsp; &nbsp; &nbsp;
-                                        </span>
-                                    </div>
-                                </div>
 
-                                <div class="modal-body">
-                                    <p>Are you sure you want to reject this?</p>
-                                    <div class="customInput">
-                                        <label>Comments</label>
-                                        <textarea type="text" rows="4" placeholder="Enter Comments"></textarea>
-                                    </div>
-                                </div>
-                                <div class="modal-footer" style="text-align:center">
-                                    <button type="button" class="btn btn-info waves-effect savebtn">Reject</button>
-                                    <button type="button" class="btn btn-danger waves-effect cancelbtn"
-                                        data-dismiss="modal">Cancel</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
 
                 </div>
             </div>
